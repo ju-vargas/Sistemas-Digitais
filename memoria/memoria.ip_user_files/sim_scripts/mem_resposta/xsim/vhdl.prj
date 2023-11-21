@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../memoria.gen/sources_1/ip/mem_resposta/mem_resposta_sim_netlist.vhdl" \
+
+nosort

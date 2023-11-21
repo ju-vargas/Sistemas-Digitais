@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt auto  -L xil_defaultlib -L secureip -L xpm --snapshot mem_resposta xil_defaultlib.mem_resposta -log elaborate.log

@@ -1,0 +1,162 @@
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+ 
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+use IEEE.NUMERIC_STD.ALL;
+
+ 
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+ 
+
+entity bram_soma is
+    Port ( rst : in STD_LOGIC;
+           clk : in STD_LOGIC;
+           done : out STD_LOGIC;
+           dout : out STD_LOGIC_VECTOR (7 downto 0));
+end bram_soma;
+
+ 
+
+architecture Behavioral of bram_soma is
+
+ 
+
+COMPONENT blk_mem_gen_0
+  PORT (
+    clka : IN STD_LOGIC;
+    wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    addra : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    dina : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    douta : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+    clkb : IN STD_LOGIC;
+    web : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    addrb : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    dinb : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    doutb : OUT STD_LOGIC_VECTOR(7 DOWNTO 0) 
+  );
+END COMPONENT;
+
+ 
+
+COMPONENT mem_resposta
+  PORT (
+    clka : IN STD_LOGIC;
+    wea : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    addra : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+    dina : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    douta : OUT STD_LOGIC_VECTOR(7 DOWNTO 0) 
+  );
+END COMPONENT;
+
+ 
+
+  
+  signal   wc : STD_LOGIC_VECTOR(0 DOWNTO 0);
+ signal   addra :  STD_LOGIC_VECTOR(3 DOWNTO 0);
+signal    dina :  STD_LOGIC_VECTOR(7 DOWNTO 0);
+signal    douta :  STD_LOGIC_VECTOR(7 DOWNTO 0);
+ signal   wr :  STD_LOGIC_VECTOR(0 DOWNTO 0);
+ signal   addrb :  STD_LOGIC_VECTOR(3 DOWNTO 0);
+signal   dinb :  STD_LOGIC_VECTOR(7 DOWNTO 0);
+signal    doutb :  STD_LOGIC_VECTOR(7 DOWNTO 0); 
+
+ 
+
+ signal   addr :  STD_LOGIC_VECTOR(2 DOWNTO 0);
+ signal   din :  STD_LOGIC_VECTOR(7 DOWNTO 0);
+ 
+ type t_estados is (S0, S1, S2, S3, s4);
+ signal state : t_estados;
+ 
+ 
+ 
+ 
+begin
+
+ 
+
+mementrada : blk_mem_gen_0
+  PORT MAP (
+    clka => clk,
+    wea => wc,
+    addra => addra,
+    dina => dina,
+    douta => douta,
+    clkb => clk,
+    web => wc,
+    addrb => addrb,
+    dinb => dinb,
+    doutb => doutb);
+  
+  msaida : mem_resposta
+  PORT MAP (
+    clka => clk,
+    wea => wr,
+    addra => addr,
+    dina => din,
+    douta => dout
+  );
+   -- somador combinacional
+  din <= std_logic_vector(unsigned(douta) + unsigned(doutb));
+  
+  process(rst, clk)
+  begin
+  if rst = '1' then
+     state <= S0;
+     addra <= "0000";
+     addrb <= "1000";
+     wr <= "0";
+     Wc <= "0";
+     addr <= "000";
+     dina <= "00000000";
+     dinb <= "00000000";
+     done <= '0';
+  elsif (clk' event and clk ='1') then
+    CASE state is 
+      when S0 => 
+       addra <= "0000";
+       addrb <= "1000";
+        wr <= "0";
+        state <= S1;
+      when S1 =>
+         addr <= "000";
+         wr <= "1";
+         state <= S2;
+      when S2 =>
+         addra <= std_logic_vector(unsigned(addra) +1);
+         addrb <= std_logic_vector(unsigned(addrb) +1); 
+         wr <= "0";
+         state <= S3;
+      when S3 =>
+         addr <= std_logic_vector(unsigned(addr) +1);
+         wr <= "1";
+         if addr <= "111" then
+            state <= S2;
+         else
+            state <= S4;
+         end if;
+      when s4 =>
+         state <= s4;
+         done <= '1';
+      end case;
+   end if;
+   end process;
+   
+   
+    
+    
+    
+    
+    
+    
+  
+end Behavioral;
