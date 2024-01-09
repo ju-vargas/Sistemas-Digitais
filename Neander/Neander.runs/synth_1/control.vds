@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Jan  9 00:50:39 2024
+# Process ID: 79012
+# Current directory: /media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Neander/Neander.runs/synth_1
+# Command line: vivado -log control.vds -mode batch -messageDb vivado.pb -notrace -source control.tcl
+# Log file: /media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Neander/Neander.runs/synth_1/control.vds
+# Journal file: /media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Neander/Neander.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source control.tcl -notrace
+Command: synth_design -top control -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+WARNING: [Common 17-348] Failed to get the license for feature 'Synthesis' and/or device 'xc7vx485t'
+0 Infos, 1 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-345] A valid license was not found for feature 'Synthesis' and/or device 'xc7vx485t'. Please run the Vivado License Manager for assistance in determining
+which features and devices are licensed for your system.
+Resolution: Check the status of your licenses in the Vivado License Manager. For debug help search Xilinx Support for "Licensing FAQ". 
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  9 00:50:50 2024...
