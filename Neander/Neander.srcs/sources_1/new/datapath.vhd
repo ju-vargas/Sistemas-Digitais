@@ -33,13 +33,13 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity datapath is
   Port (clk, rst: in std_logic; 
-        cargaREM: in std_logic;
+        loadREM:  in std_logic;
         incPC:    in std_logic; 
-        cargaRI:  in std_logic;
+        loadRI:   in std_logic;
         sel:      in std_logic;
-        cargaAC:  in std_logic;
-        cargaNZ:  in std_logic;
-        cargaPC:  in std_logic;
+        loadAC:   in std_logic;
+        loadNZ:   in std_logic;
+        loadPC:   in std_logic;
         selULA:   in std_logic_vector (2 downto 0);
         menOut:   in std_logic_vector (7 downto 0);
         menAddres:out std_logic_vector(7 downto 0);
@@ -54,7 +54,7 @@ architecture Behavioral of datapath is
 -- declarations ==========================================================================================================================================
 -- signals 
     -- reg
-    signal acumulador: std_logic_vector (7 downto 0);
+    signal ac: std_logic_vector (7 downto 0);
     signal REMem:      std_logic_vector (7 downto 0);
     signal RI:         std_logic_vector (7 downto 0);
     signal PC:         std_logic_vector (7 downto 0); 
@@ -71,18 +71,24 @@ begin
 -- (combinational and sequential) 
 
 
-    ULAout <= (acumulador + menOut)     when sel = "000" else
-              (acumulador and menOut)   when sel = "001" else
-              (acumulador or menOut)    when sel = "010" else
-              (not(acumulador))         when sel = "011" else
-              (menOut)                  when sel = "100"; 
+    ULAout <= (ac + menOut)     when sel = "000" else
+              (ac and menOut)   when sel = "001" else
+              (ac or menOut)    when sel = "010" else
+              (not(ac))         when sel = "011" else
+              (menOut)          when sel = "100"; 
+  
+    -- +     000
+    -- and   001
+    -- or    010
+    -- not x 011
+    -- y     100
 
     negFlag <= ULAout(1) ;
     zeroFlag <= '1' when ULAout = "00000000" else
                 '0';
                 
     address  <= REMem; 
-    menInput <= acumulador; 
+    menInput <= ac; 
     instruct <= RI;
     
     process(clk, rst) 
@@ -91,14 +97,14 @@ begin
             PC <= "00000000"; 
         elsif clk'event and clk='1' then
             -- PC
-            if cargaPC = '1' then
+            if loadPC = '1' then
                 PC <= menOut; 
             elsif incPC = '1' then
                 PC <= PC + 1; 
             end if;                 
        
             -- REMem
-            if cargaREM = '1' then
+            if loadREM = '1' then
                 case sel is 
                     when 0 => 
                         REMem <= PC;
@@ -108,13 +114,13 @@ begin
             end if; 
           
             -- RI
-            if cargaRI = '1' then
+            if loadRI = '1' then
                 RI <= menOut; 
             end if; 
             
             -- Acumulador 
-            if cargaAC = '1' then
-                acumulador <= ULAout; 
+            if loadAC = '1' then
+                ac <= ULAout; 
             end if; 
         end if; 
     end process;  
