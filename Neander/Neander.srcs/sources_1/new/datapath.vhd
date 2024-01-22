@@ -32,7 +32,7 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity datapath is
-  Port (clk, rst: in std_logic; 
+  Port (clk: in std_logic; 
         loadREM:  in std_logic;
         incPC:    in std_logic; 
         loadRI:   in std_logic;
@@ -44,7 +44,7 @@ entity datapath is
         menOut:   in std_logic_vector (7 downto 0);
         menAddres:out std_logic_vector(7 downto 0);
         menInput: out std_logic_vector(7 downto 0); 
-        instruct: out std_logic_vector(7 downto 0);
+        instruct: out std_logic_vector(3 downto 0);
         negFlag:  out std_logic;
         zeroFlag: out std_logic;
         address:  out std_logic_vector(7 downto 0));
@@ -54,9 +54,9 @@ architecture Behavioral of datapath is
 -- declarations ==========================================================================================================================================
 -- signals 
     -- reg
-    signal ac: std_logic_vector (7 downto 0);
+    signal ac:         std_logic_vector (7 downto 0);
     signal REMem:      std_logic_vector (7 downto 0);
-    signal RI:         std_logic_vector (7 downto 0);
+    signal RI:         std_logic_vector (3 downto 0);
     signal PC:         std_logic_vector (7 downto 0); 
      
     -- wires
@@ -71,11 +71,11 @@ begin
 -- (combinational and sequential) 
 
 
-    ULAout <= (ac + menOut)     when sel = "000" else
-              (ac and menOut)   when sel = "001" else
-              (ac or menOut)    when sel = "010" else
-              (not(ac))         when sel = "011" else
-              (menOut)          when sel = "100"; 
+    ULAout <= ((ac) + (menOut)) when selULA = "000" else
+              (ac and menOut)   when selULA = "001" else
+              (ac or menOut)    when selULA = "010" else
+              (not(ac))         when selULA = "011" else
+              (menOut)          when selULA = "100"; 
   
     -- +     000
     -- and   001
@@ -91,24 +91,22 @@ begin
     menInput <= ac; 
     instruct <= RI;
     
-    process(clk, rst) 
+    process(clk) 
     begin
-        if rst = '1' then
-            PC <= "00000000"; 
-        elsif clk'event and clk='1' then
+        if clk'event and clk='1' then
             -- PC
             if loadPC = '1' then
                 PC <= menOut; 
             elsif incPC = '1' then
-                PC <= PC + 1; 
+                PC <= unsigned(PC) + 1; 
             end if;                 
        
             -- REMem
             if loadREM = '1' then
                 case sel is 
-                    when 0 => 
+                    when '0' => 
                         REMem <= PC;
-                    when 1 =>
+                    when '1' =>
                         REMem <= menOut; 
                  end case; 
             end if; 
