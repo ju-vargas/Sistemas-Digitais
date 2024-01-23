@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Jan 23 00:41:16 2024
+# Process ID: 26489
+# Current directory: /media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Neander/Neander.runs/mem_neander_synth_1
+# Command line: vivado -log mem_neander.vds -mode batch -messageDb vivado.pb -notrace -source mem_neander.tcl
+# Log file: /media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Neander/Neander.runs/mem_neander_synth_1/mem_neander.vds
+# Journal file: /media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Neander/Neander.runs/mem_neander_synth_1/vivado.jou
+#-----------------------------------------------------------
+source mem_neander.tcl -notrace

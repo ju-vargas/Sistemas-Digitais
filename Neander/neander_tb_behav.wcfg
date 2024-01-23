@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="neander_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="neander_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="602580000fs"></ZoomStartTime>
+      <ZoomEndTime time="781180001fs"></ZoomEndTime>
+      <Cursor1Time time="699260000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="12" />
+   <wvobject db_ref_id="1" type="other" fp_name="/neander_tb/CLK_PERIOD">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/neander_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/neander_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="other" fp_name="/neander_tb/uut/control_neander/states">
+      <obj_property name="ElementShortName">states</obj_property>
+      <obj_property name="ObjectShortName">states</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group256">
+      <obj_property name="label">direct_mem</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/ENDERECO_LENDO">
+         <obj_property name="ElementShortName">ENDERECO_LENDO[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ENDERECO_LENDO[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/menAddress">
+         <obj_property name="ElementShortName">menAddress[7:0]</obj_property>
+         <obj_property name="ObjectShortName">menAddress[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/TESTE_SAIDA">
+         <obj_property name="ElementShortName">TESTE_SAIDA[7:0]</obj_property>
+         <obj_property name="ObjectShortName">TESTE_SAIDA[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/menOut">
+         <obj_property name="ElementShortName">menOut[7:0]</obj_property>
+         <obj_property name="ObjectShortName">menOut[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/TESTE_ENTRADA">
+         <obj_property name="ElementShortName">TESTE_ENTRADA[7:0]</obj_property>
+         <obj_property name="ObjectShortName">TESTE_ENTRADA[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/menInput">
+         <obj_property name="ElementShortName">menInput[7:0]</obj_property>
+         <obj_property name="ObjectShortName">menInput[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/datapath_neander/PC">
+      <obj_property name="ElementShortName">PC[7:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/datapath_neander/ULAout">
+      <obj_property name="ElementShortName">ULAout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ULAout[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/datapath_neander/ac">
+      <obj_property name="ElementShortName">ac[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ac[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/datapath_neander/REMem">
+      <obj_property name="ElementShortName">REMem[7:0]</obj_property>
+      <obj_property name="ObjectShortName">REMem[7:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/datapath_neander/RI">
+      <obj_property name="ElementShortName">RI[3:0]</obj_property>
+      <obj_property name="ObjectShortName">RI[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/instruct">
+      <obj_property name="ElementShortName">instruct[3:0]</obj_property>
+      <obj_property name="ObjectShortName">instruct[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group255">
+      <obj_property name="label">control_signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject db_ref_id="1" type="logic" fp_name="/neander_tb/uut/loadREM">
+         <obj_property name="ElementShortName">loadREM</obj_property>
+         <obj_property name="ObjectShortName">loadREM</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/neander_tb/uut/incPC">
+         <obj_property name="ElementShortName">incPC</obj_property>
+         <obj_property name="ObjectShortName">incPC</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/neander_tb/uut/loadRI">
+         <obj_property name="ElementShortName">loadRI</obj_property>
+         <obj_property name="ObjectShortName">loadRI</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/neander_tb/uut/sel">
+         <obj_property name="ElementShortName">sel</obj_property>
+         <obj_property name="ObjectShortName">sel</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/neander_tb/uut/loadAC">
+         <obj_property name="ElementShortName">loadAC</obj_property>
+         <obj_property name="ObjectShortName">loadAC</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/neander_tb/uut/loadNZ">
+         <obj_property name="ElementShortName">loadNZ</obj_property>
+         <obj_property name="ObjectShortName">loadNZ</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/neander_tb/uut/loadPC">
+         <obj_property name="ElementShortName">loadPC</obj_property>
+         <obj_property name="ObjectShortName">loadPC</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/neander_tb/uut/negFlag">
+         <obj_property name="ElementShortName">negFlag</obj_property>
+         <obj_property name="ObjectShortName">negFlag</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/neander_tb/uut/zeroFlag">
+         <obj_property name="ElementShortName">zeroFlag</obj_property>
+         <obj_property name="ObjectShortName">zeroFlag</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/neander_tb/uut/write">
+         <obj_property name="ElementShortName">write</obj_property>
+         <obj_property name="ObjectShortName">write</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="logic" fp_name="/neander_tb/uut/read">
+         <obj_property name="ElementShortName">read</obj_property>
+         <obj_property name="ObjectShortName">read</obj_property>
+      </wvobject>
+      <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/selULA">
+         <obj_property name="ElementShortName">selULA[2:0]</obj_property>
+         <obj_property name="ObjectShortName">selULA[2:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

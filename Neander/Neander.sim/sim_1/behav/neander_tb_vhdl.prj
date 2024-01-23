@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl blk_mem_gen_v8_3_1  "../../../Neander.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd"
+vhdl xil_defaultlib  "../../../Neander.srcs/sources_1/ip/mem_neander/sim/mem_neander.vhd"
+vhdl xil_defaultlib  "../../../Neander.srcs/sources_1/new/datapath.vhd"
+vhdl xil_defaultlib  "../../../Neander.srcs/sources_1/new/control.vhd"
+vhdl xil_defaultlib  "../../../Neander.srcs/sources_1/new/neander.vhd"
+vhdl xil_defaultlib  "../../../Neander.srcs/sim_1/new/neander_tb.vhd"
+
+# Do not sort compile order
+nosort

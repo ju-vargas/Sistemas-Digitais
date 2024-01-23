@@ -42,6 +42,8 @@ entity control is
            loadAC:            out std_logic;
            loadNZ:            out std_logic;
            loadPC:            out std_logic;
+           write:             out std_logic;
+           read:              out std_logic;
            selULA:            out std_logic_vector (2 downto 0));
 end control;
 
@@ -54,17 +56,17 @@ architecture Behavioral of control is
     
     signal next_state: state; 
     
-    constant ins_STA : std_logic_vector (7 downto 0) := "0001"; -- 
-    constant ins_LDA : std_logic_vector (7 downto 0) := "0010"; -- 
-    constant ins_ADD : std_logic_vector (7 downto 0) := "0011"; -- 
-    constant ins_OR  : std_logic_vector (7 downto 0) := "0100"; -- 
-    constant ins_AND : std_logic_vector (7 downto 0) := "0101"; -- 
-    constant ins_NOT : std_logic_vector (7 downto 0) := "0110"; -- 
-    constant ins_JMP : std_logic_vector (7 downto 0) := "1000"; -- 
-    constant ins_JN  : std_logic_vector (7 downto 0) := "1001"; --  
-    constant ins_JZ  : std_logic_vector (7 downto 0) := "1010"; -- 
-    constant ins_NOP : std_logic_vector (7 downto 0) := "0000"; --  
-    constant ins_HLT : std_logic_vector (7 downto 0) := "1111"; -- 
+    constant ins_STA : std_logic_vector (3 downto 0) := "0001"; -- 
+    constant ins_LDA : std_logic_vector (3 downto 0) := "0010"; -- 
+    constant ins_ADD : std_logic_vector (3 downto 0) := "0011"; -- 
+    constant ins_OR  : std_logic_vector (3 downto 0) := "0100"; -- 
+    constant ins_AND : std_logic_vector (3 downto 0) := "0101"; -- 
+    constant ins_NOT : std_logic_vector (3 downto 0) := "0110"; -- 
+    constant ins_JMP : std_logic_vector (3 downto 0) := "1000"; -- 
+    constant ins_JN  : std_logic_vector (3 downto 0) := "1001"; --  
+    constant ins_JZ  : std_logic_vector (3 downto 0) := "1010"; -- 
+    constant ins_NOP : std_logic_vector (3 downto 0) := "0000"; --  
+    constant ins_HLT : std_logic_vector (3 downto 0) := "1111"; -- 
 
     -- +     000
     -- and   001
@@ -76,7 +78,7 @@ begin
 
     process(clk, rst) 
     begin
-        if (rst) then
+        if (rst = '1') then
             states <= t0;
         elsif clk'event and clk='1' then
             states <= next_state;  
@@ -87,7 +89,7 @@ begin
     -- melhorar os cases colocando o que repete para fora
     process(states, instruction) 
     begin
-        case state is 
+        case states is 
             when t0 =>        
                     loadREM <= '1';
                     incPC   <= '0'; 
@@ -96,7 +98,7 @@ begin
                     loadAC  <= '0'; 
                     loadNZ  <= '0';
                     loadPC  <= '0'; 
-                    selULA  <= "000";
+                    selULA  <= "111";
                     read    <= '0';
                     write   <= '0'; 
                     next_state <= t1; 
@@ -110,7 +112,7 @@ begin
                     loadAC  <= '0'; 
                     loadNZ  <= '0';
                     loadPC  <= '0'; 
-                    selULA  <= "000";
+                    selULA  <= "111";
                     read    <= '1';
                     write   <= '0'; 
                     next_state <= t2; 
@@ -124,7 +126,7 @@ begin
                     loadAC  <= '0'; 
                     loadNZ  <= '0';
                     loadPC  <= '0'; 
-                    selULA  <= "000";
+                    selULA  <= "111";
                     read    <= '0';
                     write   <= '0';    
                     next_state <= t3; 
@@ -145,7 +147,7 @@ begin
                         write   <= '0';   
                         next_state <= t0;  
                
-                    when ins_STA | ins_LDA | ins_ADD | ins_OR | ins_AND |ins_JMP | ins_JN  | ins_JZ => 
+                    when ins_STA | ins_LDA | ins_ADD | ins_OR | ins_AND |ins_JMP => 
                         loadREM <= '1';
                         incPC   <= '0'; 
                         loadRI  <= '0';
@@ -153,7 +155,7 @@ begin
                         loadAC  <= '0'; 
                         loadNZ  <= '0';
                         loadPC  <= '0'; 
-                        selULA  <= "000";
+                        selULA  <= "111";
                         read    <= '0';
                         write   <= '0'; 
                         next_state <= t4;                 
@@ -167,11 +169,24 @@ begin
                             loadAC  <= '0'; 
                             loadNZ  <= '0';
                             loadPC  <= '0'; 
-                            selULA  <= "000";
+                            selULA  <= "111";
                             read    <= '0';
                             write   <= '0'; 
+                            next_state <= t4;    
+
+                        elsif (negFlag = '0') then
+                            loadREM <= '0';
+                            incPC   <= '1'; 
+                            loadRI  <= '0';
+                            sel     <= '0';
+                            loadAC  <= '0'; 
+                            loadNZ  <= '0';
+                            loadPC  <= '0'; 
+                            selULA  <= "111";
+                            read    <= '0';
+                            write   <= '0';
+                            next_state <= t0;
                         end if;
-                        next_state <= t4;    
 
                     when ins_JZ => 
                         if (zeroFlag = '1') then 
@@ -182,11 +197,67 @@ begin
                             loadAC  <= '0'; 
                             loadNZ  <= '0';
                             loadPC  <= '0'; 
-                            selULA  <= "000";
+                            selULA  <= "111";
                             read    <= '0';
                             write   <= '0'; 
+                            next_state <= t4; 
+                        
+                        elsif (zeroFlag = '0') then
+                            loadREM <= '0';
+                            incPC   <= '1'; 
+                            loadRI  <= '0';
+                            sel     <= '0';
+                            loadAC  <= '0'; 
+                            loadNZ  <= '0';
+                            loadPC  <= '0'; 
+                            selULA  <= "111";
+                            read    <= '0';
+                            write   <= '0';
+                            next_state <= t0;
                         end if;
-                        next_state <= t4;    
+                        
+                    when ins_NOP =>
+                        loadREM <= '0';
+                        incPC   <= '0'; 
+                        loadRI  <= '0';
+                        sel     <= '0';
+                        loadAC  <= '0'; 
+                        loadNZ  <= '0';
+                        loadPC  <= '0'; 
+                        selULA  <= "111";
+                        read    <= '0';
+                        write   <= '0'; 
+                    
+                        next_state <= t0;       
+                    
+                    when ins_HLT =>
+                        loadREM <= '0';
+                        incPC   <= '0'; 
+                        loadRI  <= '0';
+                        sel     <= '0';
+                        loadAC  <= '0'; 
+                        loadNZ  <= '0';
+                        loadPC  <= '0'; 
+                        selULA  <= "111";
+                        read    <= '0';
+                        write   <= '0'; 
+                        next_state <= t3;                  
+                    
+                    when others =>
+                        loadREM <= '0';
+                        incPC   <= '0'; 
+                        loadRI  <= '0';
+                        sel     <= '0';
+                        loadAC  <= '0'; 
+                        loadNZ  <= '0';
+                        loadPC  <= '0'; 
+                        selULA  <= "111";
+                        read    <= '0';
+                        write   <= '0'; 
+                        
+                        next_state <= t0; 
+
+                       
                 end case; 
 
   
@@ -200,7 +271,7 @@ begin
                         loadAC  <= '0'; 
                         loadNZ  <= '0';
                         loadPC  <= '0'; 
-                        selULA  <= "000";
+                        selULA  <= "111";
                         read    <= '1';
                         write   <= '0'; 
                                 
@@ -212,7 +283,7 @@ begin
                         loadAC  <= '0'; 
                         loadNZ  <= '0';
                         loadPC  <= '0'; 
-                        selULA  <= "000";
+                        selULA  <= "111";
                         read    <= '1';
                         write   <= '0'; 
                         
@@ -225,13 +296,14 @@ begin
                             loadAC  <= '0'; 
                             loadNZ  <= '0';
                             loadPC  <= '0'; 
-                            selULA  <= "000";
+                            selULA  <= "111";
                             read    <= '1';
                             write   <= '0'; 
+                            
                         end if;
                         
                    when ins_JZ =>
-                        if negFlag = '1' then 
+                        if zeroFlag = '1' then 
                             loadREM <= '0';
                             incPC   <= '0'; 
                             loadRI  <= '0';
@@ -239,12 +311,23 @@ begin
                             loadAC  <= '0'; 
                             loadNZ  <= '0';
                             loadPC  <= '0'; 
-                            selULA  <= "000";
+                            selULA  <= "111";
                             read    <= '1';
                             write   <= '0'; 
                         end if;
                     
-                    -- when others => ; 
+                   when others =>
+                            loadREM <= '0';
+                            incPC   <= '0'; 
+                            loadRI  <= '0';
+                            sel     <= '0';
+                            loadAC  <= '0'; 
+                            loadNZ  <= '0';
+                            loadPC  <= '0'; 
+                            selULA  <= "111";
+                            read    <= '0';
+                            write   <= '0'; 
+                            
                 end case; 
                 next_state <= t5;
 
@@ -259,9 +342,24 @@ begin
                         loadAC  <= '0'; 
                         loadNZ  <= '0';
                         loadPC  <= '0'; 
-                        selULA  <= "000";
+                        selULA  <= "111";
                         read    <= '0';
                         write   <= '0';                                  
+                
+                
+                    when others =>
+                        loadREM <= '0';
+                        incPC   <= '0'; 
+                        loadRI  <= '0';
+                        sel     <= '0';
+                        loadAC  <= '0'; 
+                        loadNZ  <= '0';
+                        loadPC  <= '0'; 
+                        selULA  <= "111";
+                        read    <= '0';
+                        write   <= '0'; 
+                            
+                                        
                 end case;
                 next_state <= t6; 
 
@@ -275,9 +373,22 @@ begin
                         loadAC  <= '0'; 
                         loadNZ  <= '0';
                         loadPC  <= '0'; 
-                        selULA  <= "000";
+                        selULA  <= "111";
                         read    <= '1';
                         write   <= '0';                         
+               
+                    when others =>
+                        loadREM <= '0';
+                        incPC   <= '0'; 
+                        loadRI  <= '0';
+                        sel     <= '0';
+                        loadAC  <= '0'; 
+                        loadNZ  <= '0';
+                        loadPC  <= '0'; 
+                        selULA  <= "111";
+                        read    <= '0';
+                        write   <= '0';                 
+               
                 end case;
                 next_state <= t7;
 
@@ -291,7 +402,7 @@ begin
                         loadAC  <= '0'; 
                         loadNZ  <= '0';
                         loadPC  <= '0'; 
-                        selULA  <= "000";
+                        selULA  <= "111";
                         read    <= '0';
                         write   <= '1';
                          
@@ -341,6 +452,19 @@ begin
                         selULA  <= "001";
                         read    <= '0';
                         write   <= '0';      
+                    
+                    when others =>
+                        loadREM <= '0';
+                        incPC   <= '0'; 
+                        loadRI  <= '0';
+                        sel     <= '0';
+                        loadAC  <= '0'; 
+                        loadNZ  <= '0';
+                        loadPC  <= '0'; 
+                        selULA  <= "111";
+                        read    <= '0';
+                        write   <= '0';                   
+                
                 end case; 
                 next_state <= t0; 
         end case; 
