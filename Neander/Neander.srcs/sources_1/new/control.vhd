@@ -56,17 +56,17 @@ architecture Behavioral of control is
     
     signal next_state: state; 
     
-    constant ins_STA : std_logic_vector (3 downto 0) := "0001"; -- 
-    constant ins_LDA : std_logic_vector (3 downto 0) := "0010"; -- 
-    constant ins_ADD : std_logic_vector (3 downto 0) := "0011"; -- 
-    constant ins_OR  : std_logic_vector (3 downto 0) := "0100"; -- 
-    constant ins_AND : std_logic_vector (3 downto 0) := "0101"; -- 
-    constant ins_NOT : std_logic_vector (3 downto 0) := "0110"; -- 
-    constant ins_JMP : std_logic_vector (3 downto 0) := "1000"; -- 
-    constant ins_JN  : std_logic_vector (3 downto 0) := "1001"; --  
-    constant ins_JZ  : std_logic_vector (3 downto 0) := "1010"; -- 
-    constant ins_NOP : std_logic_vector (3 downto 0) := "0000"; --  
-    constant ins_HLT : std_logic_vector (3 downto 0) := "1111"; -- 
+    constant ins_STA : std_logic_vector (3 downto 0) := "0001"; -- 1
+    constant ins_LDA : std_logic_vector (3 downto 0) := "0010"; -- 2
+    constant ins_ADD : std_logic_vector (3 downto 0) := "0011"; -- 3
+    constant ins_OR  : std_logic_vector (3 downto 0) := "0100"; -- 4
+    constant ins_AND : std_logic_vector (3 downto 0) := "0101"; -- 5
+    constant ins_NOT : std_logic_vector (3 downto 0) := "0110"; -- 6
+    constant ins_JMP : std_logic_vector (3 downto 0) := "1000"; -- 8
+    constant ins_JN  : std_logic_vector (3 downto 0) := "1001"; -- 9
+    constant ins_JZ  : std_logic_vector (3 downto 0) := "1010"; -- a
+    constant ins_NOP : std_logic_vector (3 downto 0) := "0000"; -- 0
+    constant ins_HLT : std_logic_vector (3 downto 0) := "1111"; -- f
 
     -- +     000
     -- and   001
@@ -86,7 +86,6 @@ begin
     end process; 
     
     
-    -- melhorar os cases colocando o que repete para fora
     process(states, instruction) 
     begin
         case states is 
@@ -345,8 +344,54 @@ begin
                         selULA  <= "111";
                         read    <= '0';
                         write   <= '0';                                  
-                
-                
+                        
+                        next_state <= t6; 
+
+                     when ins_JMP =>
+                        loadREM <= '0';
+                        incPC   <= '0'; 
+                        loadRI  <= '0';
+                        sel     <= '0';
+                        loadAC  <= '0'; 
+                        loadNZ  <= '0';
+                        loadPC  <= '1'; 
+                        selULA  <= "111";
+                        read    <= '0';
+                        write   <= '0';                                  
+                        
+                        next_state <= t0; 
+
+                   when ins_JN =>
+                        if negFlag = '1' then 
+                            loadREM <= '0';
+                            incPC   <= '0'; 
+                            loadRI  <= '0';
+                            sel     <= '0';
+                            loadAC  <= '0'; 
+                            loadNZ  <= '0';
+                            loadPC  <= '1'; 
+                            selULA  <= "111";
+                            read    <= '0';
+                            write   <= '0'; 
+                            next_state <= t0;
+                        end if;
+
+                   when ins_JZ =>
+                        if zeroFlag = '1' then 
+                            loadREM <= '0';
+                            incPC   <= '0'; 
+                            loadRI  <= '0';
+                            sel     <= '0';
+                            loadAC  <= '0'; 
+                            loadNZ  <= '0';
+                            loadPC  <= '1'; 
+                            selULA  <= "111";
+                            read    <= '0';
+                            write   <= '0'; 
+                            next_state <= t0;
+                        end if;
+                        
+                        
                     when others =>
                         loadREM <= '0';
                         incPC   <= '0'; 
@@ -358,10 +403,10 @@ begin
                         selULA  <= "111";
                         read    <= '0';
                         write   <= '0'; 
+                        next_state <= t0;
                             
                                         
                 end case;
-                next_state <= t6; 
 
             when t6 => 
                 case instruction is 

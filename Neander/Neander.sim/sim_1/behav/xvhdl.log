@@ -13,7 +13,7 @@ INFO: [VRFC 10-307] analyzing entity beh_ff_ce
 INFO: [VRFC 10-307] analyzing entity beh_ff_pre
 INFO: [VRFC 10-307] analyzing entity beh_muxf7
 INFO: [VRFC 10-307] analyzing entity STATE_LOGIC
-INFO: [VRFC 10-163] Analyzing VHDL file "/media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Neander/Neander.srcs/sources_1/ip/mem_neander/sim/mem_neander.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Neander/Neander.srcs/sources_1/ip/mem_neander_1/sim/mem_neander.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity mem_neander
 INFO: [VRFC 10-163] Analyzing VHDL file "/media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Neander/Neander.srcs/sources_1/new/datapath.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity datapath

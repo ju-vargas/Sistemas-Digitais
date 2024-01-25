@@ -75,7 +75,8 @@ begin
               (('0' & ac) and ('0' & menOut))   when selULA = "001" else
               (('0' & ac) or ('0' & menOut))    when selULA = "010" else
               ('0' & (not(ac)))                 when selULA = "011" else
-              ('0' & menOut)                    when selULA = "100"; 
+              ('0' & menOut)                    when selULA = "100" else
+              ULAout                            when selUla = "111"; 
   
     -- +     000
     -- and   001
@@ -83,9 +84,6 @@ begin
     -- not x 011
     -- y     100
 
-    negFlag <= ULAout(7) ;
-    zeroFlag <= '1' when ULAout = "00000000" else
-                '0';
                 
     menAddress  <= REMem; 
     menInput    <= ac; 
@@ -127,6 +125,18 @@ begin
             if loadAC = '1' then
                 ac <= ULAout(7 downto 0); 
             end if; 
+            
+            --NZ
+            if loadNZ = '1' then
+                negFlag  <= ULAout(7) ;
+                if ULAout(7 downto 0) = "00000000" then
+                    zeroFlag <= '1';
+                else 
+                    zeroFlag <= '0';
+                end if; 
+               
+            end if; 
+                            
         end if; 
     end process;  
 

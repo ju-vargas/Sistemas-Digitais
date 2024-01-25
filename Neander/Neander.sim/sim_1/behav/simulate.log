@@ -1,4 +1,4 @@
 Vivado Simulator 2015.4
 Time resolution is 1 ps
 Note: Block Memory Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior.
-Time: 32 ns  Iteration: 1  Process: /neander_tb/uut/mem/U0/native_mem_module/mem_module/line__3418  File: /media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Neander/Neander.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd
+Time: 40 ns  Iteration: 1  Process: /neander_tb/uut/mem/U0/native_mem_module/mem_module/line__3418  File: /media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Neander/Neander.ip_user_files/ipstatic/blk_mem_gen_v8_3_1/simulation/blk_mem_gen_v8_3.vhd

@@ -10,9 +10,9 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="602580000fs"></ZoomStartTime>
-      <ZoomEndTime time="781180001fs"></ZoomEndTime>
-      <Cursor1Time time="699260000fs"></Cursor1Time>
+      <ZoomStartTime time="232460000fs"></ZoomStartTime>
+      <ZoomEndTime time="250100002fs"></ZoomEndTime>
+      <Cursor1Time time="103520000fs"></Cursor1Time>
    </zoom_setting>
    <WVObjectSize size="12" />
    <wvobject db_ref_id="1" type="other" fp_name="/neander_tb/CLK_PERIOD">
@@ -35,30 +35,15 @@
       <obj_property name="label">direct_mem</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
-      <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/ENDERECO_LENDO">
-         <obj_property name="ElementShortName">ENDERECO_LENDO[7:0]</obj_property>
-         <obj_property name="ObjectShortName">ENDERECO_LENDO[7:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      </wvobject>
       <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/menAddress">
          <obj_property name="ElementShortName">menAddress[7:0]</obj_property>
          <obj_property name="ObjectShortName">menAddress[7:0]</obj_property>
          <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
-      <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/TESTE_SAIDA">
-         <obj_property name="ElementShortName">TESTE_SAIDA[7:0]</obj_property>
-         <obj_property name="ObjectShortName">TESTE_SAIDA[7:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      </wvobject>
       <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/menOut">
          <obj_property name="ElementShortName">menOut[7:0]</obj_property>
          <obj_property name="ObjectShortName">menOut[7:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/TESTE_ENTRADA">
-         <obj_property name="ElementShortName">TESTE_ENTRADA[7:0]</obj_property>
-         <obj_property name="ObjectShortName">TESTE_ENTRADA[7:0]</obj_property>
-         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
       </wvobject>
       <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/menInput">
          <obj_property name="ElementShortName">menInput[7:0]</obj_property>
@@ -67,19 +52,21 @@
       </wvobject>
    </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/datapath_neander/PC">
+      <obj_property name="DisplayName">label</obj_property>
       <obj_property name="ElementShortName">PC[7:0]</obj_property>
       <obj_property name="ObjectShortName">PC[7:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/datapath_neander/ULAout">
-      <obj_property name="ElementShortName">ULAout[7:0]</obj_property>
-      <obj_property name="ObjectShortName">ULAout[7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="label">PC[7:/neander_tb/uut/datapath_neander/PC0]</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/datapath_neander/ac">
       <obj_property name="ElementShortName">ac[7:0]</obj_property>
       <obj_property name="ObjectShortName">ac[7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/datapath_neander/ULAout">
+      <obj_property name="ElementShortName">ULAout[8:0]</obj_property>
+      <obj_property name="ObjectShortName">ULAout[8:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/datapath_neander/REMem">
       <obj_property name="ElementShortName">REMem[7:0]</obj_property>
@@ -94,7 +81,7 @@
    <wvobject db_ref_id="1" type="array" fp_name="/neander_tb/uut/instruct">
       <obj_property name="ElementShortName">instruct[3:0]</obj_property>
       <obj_property name="ObjectShortName">instruct[3:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject type="group" fp_name="group255">
       <obj_property name="label">control_signals</obj_property>
