@@ -33,7 +33,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity neander is
     Port ( clk : in STD_LOGIC;
-           rst : in STD_LOGIC);
+           rst : in STD_LOGIC;
+           outp: out STD_LOGIC);
 end neander;
 
 architecture Behavioral of neander is

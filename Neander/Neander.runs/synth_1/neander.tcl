@@ -17,6 +17,7 @@ add_files /media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Neander/mul
 add_files /media/juliana/LinFiles/Downloads/confere_soma.coe
 add_files /media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Neander/memFiles/confere_soma.coe
 add_files /media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Neander/memFiles/teste.coe
+add_files /media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Neander/memFiles/mult_teste.coe
 add_files -quiet /media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Neander/Neander.runs/mem_neander_synth_1/mem_neander.dcp
 set_property used_in_implementation false [get_files /media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Neander/Neander.runs/mem_neander_synth_1/mem_neander.dcp]
 read_vhdl -library xil_defaultlib {

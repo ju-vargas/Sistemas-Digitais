@@ -20,7 +20,7 @@ architecture bench of neander_tb is
   signal rst: STD_LOGIC := '1';
   signal tst: STD_LOGIC := '1';
 
-  constant CLK_PERIOD: time := 2ns;
+  constant CLK_PERIOD: time := 0.1ns;
   
 begin
    
