@@ -2,3 +2,6 @@ Running: xsim.dir/neander_tb_behav/xsimk -simmode gui -wdb neander_tb_behav.wdb 
 Design successfully loaded
 Design Loading Memory Usage: 84408 KB (Peak: 84556 KB)
 Design Loading CPU Usage: 70 ms
+Simulation completed
+Simulation Memory Usage: 231876 KB (Peak: 297412 KB)
+Simulation CPU Usage: 110 ms
