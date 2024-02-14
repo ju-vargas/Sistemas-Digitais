@@ -1,0 +1,20 @@
+Default
+Periodo clock 6,901 +/- 2,7
+c.c  88
+DSP  0
+FF   137
+LUT  1040
+URAM 0
+
+6 + 8 + 2 + 8 + 2 + 8 + 3 = 37 pinos
+
+All for unroll
+Entries all dimensioned
+Periodo clock 6,901 +/- 2,7
+c.c  3
+DSP  0
+FF   172
+LUT  953
+URAM 0
+
+8*64 + 8*4 + 8*4 + 3 = 579 pinos

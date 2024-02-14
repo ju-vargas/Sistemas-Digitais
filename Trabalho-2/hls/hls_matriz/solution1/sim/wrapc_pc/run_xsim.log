@@ -1,0 +1,104 @@
+
+
+Test passes!! 
+
+Matrix results:
+
+
+1 -5 
+
+1 -5 
+
+
+D:\Sistemas-Digitais\Trabalho-2\hls\hls_matriz\solution1\sim\verilog>set PATH= 
+
+D:\Sistemas-Digitais\Trabalho-2\hls\hls_matriz\solution1\sim\verilog>call D:/Xilinx/Vivado/2023.1/bin/xelab xil_defaultlib.apatb_matrixmul_top glbl -Oenable_linking_all_libraries  -prj matrixmul.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_15 -L floating_point_v7_0_20 --lib "ieee_proposed=./ieee_proposed" -s matrixmul  
+ECHO est  desativado.
+ECHO est  desativado.
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_matrixmul_top glbl -Oenable_linking_all_libraries -prj matrixmul.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_15 -L floating_point_v7_0_20 --lib ieee_proposed=./ieee_proposed -s matrixmul 
+Multi-threading is on. Using 4 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/sim/verilog/AESL_automem_a.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_a
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/sim/verilog/AESL_automem_b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_b
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/sim/verilog/AESL_automem_res.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_res
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/sim/verilog/matrixmul.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_matrixmul_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/sim/verilog/matrixmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/sim/verilog/matrixmul_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/sim/verilog/matrixmul_matrixmul_Pipeline_Row_sum.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_matrixmul_Pipeline_Row_sum
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/sim/verilog/matrixmul_matrixmul_Pipeline_R_row_R_col.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_matrixmul_Pipeline_R_row_R_col
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/sim/verilog/matrixmul_mul_8s_6s_8_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_mul_8s_6s_8_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.matrixmul_flow_control_loop_pipe...
+Compiling module xil_defaultlib.matrixmul_matrixmul_Pipeline_Row...
+Compiling module xil_defaultlib.matrixmul_mul_8s_6s_8_1_1(NUM_ST...
+Compiling module xil_defaultlib.matrixmul_matrixmul_Pipeline_R_r...
+Compiling module xil_defaultlib.matrixmul
+Compiling module xil_defaultlib.AESL_automem_a
+Compiling module xil_defaultlib.AESL_automem_b
+Compiling module xil_defaultlib.AESL_automem_res
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=16)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_matrixmul_top
+Compiling module work.glbl
+Built simulation snapshot matrixmul
+ECHO est  desativado.
+ECHO est  desativado.
+
+****** xsim v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/matrixmul/xsim_script.tcl
+# xsim {matrixmul} -autoloadwcfg -tclbatch {matrixmul.tcl}
+Time resolution is 1 ps
+source matrixmul.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "555000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 615 ns : File "D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/sim/verilog/matrixmul.autotb.v" Line 327
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Feb 13 18:56:01 2024...
+
+
+Test passes!! 
+
+Matrix results:
+
+
+1 -5 
+
+1 -5 
+

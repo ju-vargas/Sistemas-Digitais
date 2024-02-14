@@ -1,0 +1,75 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="matrixmul" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="matrixmul"/>
+            </pragma>
+        </directive>
+        <directive functionName="matrixmul" label="Sum" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="R_row" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="R_col" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="Col_r" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="Row_a10" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="Row_r" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="Row_a01" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="sum00" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="sum10" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="sum11" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="sum01" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="Row_a11" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="Row_a00" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="0"/>
+                <option name="variable" positionalBoolean="4" value="a"/>
+            </pragma>
+        </directive>
+        <directive functionName="matrixmul" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="0"/>
+                <option name="variable" positionalBoolean="4" value="b"/>
+            </pragma>
+        </directive>
+        <directive functionName="matrixmul" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="0"/>
+                <option name="variable" positionalBoolean="4" value="r"/>
+            </pragma>
+        </directive>
+        <directive functionName="matrixmul" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="matrixmul"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

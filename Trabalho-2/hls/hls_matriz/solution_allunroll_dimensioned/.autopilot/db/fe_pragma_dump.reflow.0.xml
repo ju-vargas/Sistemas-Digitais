@@ -1,0 +1,15 @@
+<pragmas>
+<pragma file="matrixmul.cpp" line="13" pragmaType="unroll" parentfunction="matrixmul" factor="-1" skip_exit_check="0"/>
+<pragma file="matrixmul.cpp" line="11" pragmaType="unroll" parentfunction="matrixmul" factor="-1" skip_exit_check="0"/>
+<pragma file="matrixmul.cpp" line="19" pragmaType="unroll" parentfunction="matrixmul" factor="-1" skip_exit_check="0"/>
+<pragma file="matrixmul.cpp" line="17" pragmaType="unroll" parentfunction="matrixmul" factor="-1" skip_exit_check="0"/>
+<pragma file="matrixmul.cpp" line="12" pragmaType="unroll" parentfunction="matrixmul" factor="-1" skip_exit_check="0"/>
+<pragma file="matrixmul.cpp" line="16" pragmaType="unroll" parentfunction="matrixmul" factor="-1" skip_exit_check="0"/>
+<pragma file="matrixmul.cpp" line="14" pragmaType="unroll" parentfunction="matrixmul" factor="-1" skip_exit_check="0"/>
+<pragma file="matrixmul.cpp" line="18" pragmaType="unroll" parentfunction="matrixmul" factor="-1" skip_exit_check="0"/>
+<pragma file="matrixmul.cpp" line="20" pragmaType="unroll" parentfunction="matrixmul" factor="-1" skip_exit_check="0"/>
+<pragma file="matrixmul.cpp" line="15" pragmaType="unroll" parentfunction="matrixmul" factor="-1" skip_exit_check="0"/>
+<pragma file="matrixmul.cpp" line="21" pragmaType="array_partition" parentfunction="matrixmul" dim="0" factor="0" mode="complete" dynamic="0" variable="a"/>
+<pragma file="matrixmul.cpp" line="22" pragmaType="array_partition" parentfunction="matrixmul" dim="0" factor="0" mode="complete" dynamic="0" variable="b"/>
+<pragma file="matrixmul.cpp" line="23" pragmaType="array_partition" parentfunction="matrixmul" dim="0" factor="0" mode="complete" dynamic="0" variable="r"/>
+</pragmas>

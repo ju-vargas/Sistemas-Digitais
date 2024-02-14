@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [HLS 200-1986] Could not apply UNROLL directive, invalid function, label, or variable (D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:10)" projectName="hls_matriz" solutionName="solution_allunroll_dimensioned" date="2024-02-14T00:57:14.966-0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1986] Could not apply UNROLL directive, invalid function, label, or variable (D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:9)" projectName="hls_matriz" solutionName="solution_allunroll_dimensioned" date="2024-02-14T00:57:14.962-0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1986] Could not apply UNROLL directive, invalid function, label, or variable (D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:8)" projectName="hls_matriz" solutionName="solution_allunroll_dimensioned" date="2024-02-14T00:57:14.957-0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1986] Could not apply UNROLL directive, invalid function, label, or variable (D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/directives.tcl:10)" projectName="hls_matriz" solutionName="solution1" date="2024-02-14T00:39:47.953-0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1986] Could not apply UNROLL directive, invalid function, label, or variable (D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/directives.tcl:9)" projectName="hls_matriz" solutionName="solution1" date="2024-02-14T00:39:47.948-0300" type="Warning"/>
+        <logs message="WARNING: [HLS 200-1986] Could not apply UNROLL directive, invalid function, label, or variable (D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/directives.tcl:8)" projectName="hls_matriz" solutionName="solution1" date="2024-02-14T00:39:47.944-0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,281 @@
+
+
+================================================================
+== Synthesis Summary Report of 'matrixmul'
+================================================================
++ General Information: 
+    * Date:           Wed Feb 14 00:57:20 2024
+    * Version:        2023.1 (Build 3854077 on May  4 2023)
+    * Project:        hls_matriz
+    * Solution:       solution_allunroll_dimensioned (Vivado IP Flow Target)
+    * Product family: artix7
+    * Target device:  xc7a35t-csg325-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+----------+-----+
+    |   Modules   | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |           |          |     |
+    |   & Loops   | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |    LUT   | URAM|
+    +-------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+----------+-----+
+    |+ matrixmul  |     -|  0.40|        3|  30.000|         -|        4|     -|        no|     -|   -|  172 (~0%)|  953 (4%)|    -|
+    +-------------+------+------+---------+--------+----------+---------+------+----------+------+----+-----------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++-------+---------+-----------+----------+
+| Port  | Mode    | Direction | Bitwidth |
++-------+---------+-----------+----------+
+| a_0_0 | ap_none | in        | 8        |
+| a_0_1 | ap_none | in        | 8        |
+| a_0_2 | ap_none | in        | 8        |
+| a_0_3 | ap_none | in        | 8        |
+| a_0_4 | ap_none | in        | 8        |
+| a_0_5 | ap_none | in        | 8        |
+| a_0_6 | ap_none | in        | 8        |
+| a_0_7 | ap_none | in        | 8        |
+| a_1_0 | ap_none | in        | 8        |
+| a_1_1 | ap_none | in        | 8        |
+| a_1_2 | ap_none | in        | 8        |
+| a_1_3 | ap_none | in        | 8        |
+| a_1_4 | ap_none | in        | 8        |
+| a_1_5 | ap_none | in        | 8        |
+| a_1_6 | ap_none | in        | 8        |
+| a_1_7 | ap_none | in        | 8        |
+| a_2_0 | ap_none | in        | 8        |
+| a_2_1 | ap_none | in        | 8        |
+| a_2_2 | ap_none | in        | 8        |
+| a_2_3 | ap_none | in        | 8        |
+| a_2_4 | ap_none | in        | 8        |
+| a_2_5 | ap_none | in        | 8        |
+| a_2_6 | ap_none | in        | 8        |
+| a_2_7 | ap_none | in        | 8        |
+| a_3_0 | ap_none | in        | 8        |
+| a_3_1 | ap_none | in        | 8        |
+| a_3_2 | ap_none | in        | 8        |
+| a_3_3 | ap_none | in        | 8        |
+| a_3_4 | ap_none | in        | 8        |
+| a_3_5 | ap_none | in        | 8        |
+| a_3_6 | ap_none | in        | 8        |
+| a_3_7 | ap_none | in        | 8        |
+| a_4_0 | ap_none | in        | 8        |
+| a_4_1 | ap_none | in        | 8        |
+| a_4_2 | ap_none | in        | 8        |
+| a_4_3 | ap_none | in        | 8        |
+| a_4_4 | ap_none | in        | 8        |
+| a_4_5 | ap_none | in        | 8        |
+| a_4_6 | ap_none | in        | 8        |
+| a_4_7 | ap_none | in        | 8        |
+| a_5_0 | ap_none | in        | 8        |
+| a_5_1 | ap_none | in        | 8        |
+| a_5_2 | ap_none | in        | 8        |
+| a_5_3 | ap_none | in        | 8        |
+| a_5_4 | ap_none | in        | 8        |
+| a_5_5 | ap_none | in        | 8        |
+| a_5_6 | ap_none | in        | 8        |
+| a_5_7 | ap_none | in        | 8        |
+| a_6_0 | ap_none | in        | 8        |
+| a_6_1 | ap_none | in        | 8        |
+| a_6_2 | ap_none | in        | 8        |
+| a_6_3 | ap_none | in        | 8        |
+| a_6_4 | ap_none | in        | 8        |
+| a_6_5 | ap_none | in        | 8        |
+| a_6_6 | ap_none | in        | 8        |
+| a_6_7 | ap_none | in        | 8        |
+| a_7_0 | ap_none | in        | 8        |
+| a_7_1 | ap_none | in        | 8        |
+| a_7_2 | ap_none | in        | 8        |
+| a_7_3 | ap_none | in        | 8        |
+| a_7_4 | ap_none | in        | 8        |
+| a_7_5 | ap_none | in        | 8        |
+| a_7_6 | ap_none | in        | 8        |
+| a_7_7 | ap_none | in        | 8        |
+| b_0_0 | ap_none | in        | 8        |
+| b_0_1 | ap_none | in        | 8        |
+| b_1_0 | ap_none | in        | 8        |
+| b_1_1 | ap_none | in        | 8        |
+| r_0_0 | ap_vld  | out       | 8        |
+| r_0_1 | ap_vld  | out       | 8        |
+| r_1_0 | ap_vld  | out       | 8        |
+| r_1_1 | ap_vld  | out       | 8        |
++-------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+--------------+
+| Argument | Direction | Datatype     |
++----------+-----------+--------------+
+| a        | in        | signed char* |
+| b        | in        | signed char* |
+| r        | out       | signed char* |
++----------+-----------+--------------+
+
+* SW-to-HW Mapping
++----------+--------------+---------+
+| Argument | HW Interface | HW Type |
++----------+--------------+---------+
+| a        | a_0_0        | port    |
+| a        | a_0_1        | port    |
+| a        | a_0_2        | port    |
+| a        | a_0_3        | port    |
+| a        | a_0_4        | port    |
+| a        | a_0_5        | port    |
+| a        | a_0_6        | port    |
+| a        | a_0_7        | port    |
+| a        | a_1_0        | port    |
+| a        | a_1_1        | port    |
+| a        | a_1_2        | port    |
+| a        | a_1_3        | port    |
+| a        | a_1_4        | port    |
+| a        | a_1_5        | port    |
+| a        | a_1_6        | port    |
+| a        | a_1_7        | port    |
+| a        | a_2_0        | port    |
+| a        | a_2_1        | port    |
+| a        | a_2_2        | port    |
+| a        | a_2_3        | port    |
+| a        | a_2_4        | port    |
+| a        | a_2_5        | port    |
+| a        | a_2_6        | port    |
+| a        | a_2_7        | port    |
+| a        | a_3_0        | port    |
+| a        | a_3_1        | port    |
+| a        | a_3_2        | port    |
+| a        | a_3_3        | port    |
+| a        | a_3_4        | port    |
+| a        | a_3_5        | port    |
+| a        | a_3_6        | port    |
+| a        | a_3_7        | port    |
+| a        | a_4_0        | port    |
+| a        | a_4_1        | port    |
+| a        | a_4_2        | port    |
+| a        | a_4_3        | port    |
+| a        | a_4_4        | port    |
+| a        | a_4_5        | port    |
+| a        | a_4_6        | port    |
+| a        | a_4_7        | port    |
+| a        | a_5_0        | port    |
+| a        | a_5_1        | port    |
+| a        | a_5_2        | port    |
+| a        | a_5_3        | port    |
+| a        | a_5_4        | port    |
+| a        | a_5_5        | port    |
+| a        | a_5_6        | port    |
+| a        | a_5_7        | port    |
+| a        | a_6_0        | port    |
+| a        | a_6_1        | port    |
+| a        | a_6_2        | port    |
+| a        | a_6_3        | port    |
+| a        | a_6_4        | port    |
+| a        | a_6_5        | port    |
+| a        | a_6_6        | port    |
+| a        | a_6_7        | port    |
+| a        | a_7_0        | port    |
+| a        | a_7_1        | port    |
+| a        | a_7_2        | port    |
+| a        | a_7_3        | port    |
+| a        | a_7_4        | port    |
+| a        | a_7_5        | port    |
+| a        | a_7_6        | port    |
+| a        | a_7_7        | port    |
+| b        | b_0_0        | port    |
+| b        | b_0_1        | port    |
+| b        | b_1_0        | port    |
+| b        | b_1_1        | port    |
+| r        | r_0_0        | port    |
+| r        | r_0_0_ap_vld | port    |
+| r        | r_0_1        | port    |
+| r        | r_0_1_ap_vld | port    |
+| r        | r_1_0        | port    |
+| r        | r_1_0_ap_vld | port    |
+| r        | r_1_1        | port    |
+| r        | r_1_1_ap_vld | port    |
++----------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                    | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++-------------------------+-----+--------+-------------+-----+--------+---------+
+| + matrixmul             | 0   |        |             |     |        |         |
+|   add_ln59_1_fu_694_p2  | -   |        | add_ln59_1  | add | fabric | 0       |
+|   add_ln59_4_fu_712_p2  | -   |        | add_ln59_4  | add | fabric | 0       |
+|   add_ln59_7_fu_724_p2  | -   |        | add_ln59_7  | add | fabric | 0       |
+|   add_ln59_8_fu_730_p2  | -   |        | add_ln59_8  | add | fabric | 0       |
+|   add_ln59_11_fu_622_p2 | -   |        | add_ln59_11 | add | fabric | 0       |
+|   add_ln65_1_fu_753_p2  | -   |        | add_ln65_1  | add | fabric | 0       |
+|   add_ln65_4_fu_771_p2  | -   |        | add_ln65_4  | add | fabric | 0       |
+|   add_ln65_7_fu_783_p2  | -   |        | add_ln65_7  | add | fabric | 0       |
+|   add_ln65_8_fu_789_p2  | -   |        | add_ln65_8  | add | fabric | 0       |
+|   add_ln65_11_fu_640_p2 | -   |        | add_ln65_11 | add | fabric | 0       |
+|   add_ln71_1_fu_812_p2  | -   |        | add_ln71_1  | add | fabric | 0       |
+|   add_ln71_4_fu_830_p2  | -   |        | add_ln71_4  | add | fabric | 0       |
+|   add_ln71_7_fu_842_p2  | -   |        | add_ln71_7  | add | fabric | 0       |
+|   add_ln71_8_fu_848_p2  | -   |        | add_ln71_8  | add | fabric | 0       |
+|   add_ln71_11_fu_658_p2 | -   |        | add_ln71_11 | add | fabric | 0       |
+|   add_ln77_1_fu_871_p2  | -   |        | add_ln77_1  | add | fabric | 0       |
+|   add_ln77_4_fu_889_p2  | -   |        | add_ln77_4  | add | fabric | 0       |
+|   add_ln77_7_fu_901_p2  | -   |        | add_ln77_7  | add | fabric | 0       |
+|   add_ln77_8_fu_907_p2  | -   |        | add_ln77_8  | add | fabric | 0       |
+|   add_ln77_11_fu_676_p2 | -   |        | add_ln77_11 | add | fabric | 0       |
+|   sub_ln83_fu_972_p2    | -   |        | sub_ln83    | sub | fabric | 0       |
+|   sub_ln83_1_fu_1115_p2 | -   |        | sub_ln83_1  | sub | fabric | 0       |
+|   mul_8s_6s_8_1_1_U1    | -   |        | mul_ln83    | mul | auto   | 0       |
+|   sub_ln83_2_fu_1010_p2 | -   |        | sub_ln83_2  | sub | fabric | 0       |
+|   sub_ln83_3_fu_1149_p2 | -   |        | sub_ln83_3  | sub | fabric | 0       |
+|   sub_ln83_4_fu_1048_p2 | -   |        | sub_ln83_4  | sub | fabric | 0       |
+|   sub_ln83_5_fu_1176_p2 | -   |        | sub_ln83_5  | sub | fabric | 0       |
+|   sub_ln83_6_fu_1086_p2 | -   |        | sub_ln83_6  | sub | fabric | 0       |
+|   sub_ln83_7_fu_1203_p2 | -   |        | sub_ln83_7  | sub | fabric | 0       |
+|   mul_8s_6s_8_1_1_U2    | -   |        | mul_ln83_1  | mul | auto   | 0       |
+|   mul_8s_6s_8_1_1_U3    | -   |        | mul_ln83_2  | mul | auto   | 0       |
+|   mul_8s_6s_8_1_1_U4    | -   |        | mul_ln83_3  | mul | auto   | 0       |
++-------------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+---------------------------+-----------------------------------------------------------------------------+
+| Type            | Options                   | Location                                                                    |
++-----------------+---------------------------+-----------------------------------------------------------------------------+
+| array_partition | complete dim=0 variable=a | hls_matriz/solution_allunroll_dimensioned/directives.tcl:21 in matrixmul, a |
+| array_partition | complete dim=0 variable=b | hls_matriz/solution_allunroll_dimensioned/directives.tcl:22 in matrixmul, b |
+| array_partition | complete dim=0 variable=r | hls_matriz/solution_allunroll_dimensioned/directives.tcl:23 in matrixmul, r |
+| unroll          |                           | hls_matriz/solution_allunroll_dimensioned/directives.tcl:11 in matrixmul    |
+| unroll          |                           | hls_matriz/solution_allunroll_dimensioned/directives.tcl:12 in matrixmul    |
+| unroll          |                           | hls_matriz/solution_allunroll_dimensioned/directives.tcl:13 in matrixmul    |
+| unroll          |                           | hls_matriz/solution_allunroll_dimensioned/directives.tcl:14 in matrixmul    |
+| unroll          |                           | hls_matriz/solution_allunroll_dimensioned/directives.tcl:15 in matrixmul    |
+| unroll          |                           | hls_matriz/solution_allunroll_dimensioned/directives.tcl:16 in matrixmul    |
+| unroll          |                           | hls_matriz/solution_allunroll_dimensioned/directives.tcl:17 in matrixmul    |
+| unroll          |                           | hls_matriz/solution_allunroll_dimensioned/directives.tcl:18 in matrixmul    |
+| unroll          |                           | hls_matriz/solution_allunroll_dimensioned/directives.tcl:19 in matrixmul    |
+| unroll          |                           | hls_matriz/solution_allunroll_dimensioned/directives.tcl:20 in matrixmul    |
++-----------------+---------------------------+-----------------------------------------------------------------------------+
+
+

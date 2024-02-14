@@ -1,0 +1,87 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/csynth.tcl:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=matrixmul" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:21:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="complete dim=0 variable=a" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="complete dim=0 variable=b" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:23:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="complete dim=0 variable=r" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=matrixmul" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:20:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="matrixmul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrixmul.cpp:53:0" msg_body="Unrolling loop 'Row_r' (matrixmul.cpp:81:9) in function 'matrixmul' completely with a factor of 2">
+        <args Factor="2" LoopLoc="matrixmul.cpp:81:9" LoopName="Row_r"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrixmul.cpp:53:0" msg_body="Unrolling loop 'Col_r' (matrixmul.cpp:82:10) in function 'matrixmul' completely with a factor of 2">
+        <args Factor="2" LoopLoc="matrixmul.cpp:82:10" LoopName="Col_r"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrixmul.cpp:53:0" msg_body="Unrolling loop 'Row_a11' (matrixmul.cpp:75:11) in function 'matrixmul' completely with a factor of 4">
+        <args Factor="4" LoopLoc="matrixmul.cpp:75:11" LoopName="Row_a11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrixmul.cpp:53:0" msg_body="Unrolling loop 'sum11' (matrixmul.cpp:76:10) in function 'matrixmul' completely with a factor of 4">
+        <args Factor="4" LoopLoc="matrixmul.cpp:76:10" LoopName="sum11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrixmul.cpp:53:0" msg_body="Unrolling loop 'Row_a10' (matrixmul.cpp:69:11) in function 'matrixmul' completely with a factor of 4">
+        <args Factor="4" LoopLoc="matrixmul.cpp:69:11" LoopName="Row_a10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrixmul.cpp:53:0" msg_body="Unrolling loop 'sum10' (matrixmul.cpp:70:10) in function 'matrixmul' completely with a factor of 4">
+        <args Factor="4" LoopLoc="matrixmul.cpp:70:10" LoopName="sum10"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrixmul.cpp:53:0" msg_body="Unrolling loop 'Row_a01' (matrixmul.cpp:63:11) in function 'matrixmul' completely with a factor of 4">
+        <args Factor="4" LoopLoc="matrixmul.cpp:63:11" LoopName="Row_a01"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrixmul.cpp:53:0" msg_body="Unrolling loop 'sum01' (matrixmul.cpp:64:10) in function 'matrixmul' completely with a factor of 4">
+        <args Factor="4" LoopLoc="matrixmul.cpp:64:10" LoopName="sum01"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrixmul.cpp:53:0" msg_body="Unrolling loop 'Row_a00' (matrixmul.cpp:57:11) in function 'matrixmul' completely with a factor of 4">
+        <args Factor="4" LoopLoc="matrixmul.cpp:57:11" LoopName="Row_a00"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="matrixmul.cpp:53:0" msg_body="Unrolling loop 'sum00' (matrixmul.cpp:58:10) in function 'matrixmul' completely with a factor of 4">
+        <args Factor="4" LoopLoc="matrixmul.cpp:58:10" LoopName="sum00"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrixmul.cpp:53:0" msg_body="Applying array_partition to 'a': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="a"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrixmul.cpp:53:0" msg_body="Applying array_partition to 'b': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="b"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="matrixmul.cpp:53:0" msg_body="Applying array_partition to 'r': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="r"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

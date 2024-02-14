@@ -1,0 +1,46 @@
+D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/csynth.tcl:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrixmul_XLX_SEP_ PragmaOptions=name=matrixmul_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=matrixmul
+        ^
+D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:21:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrixmul_XLX_SEP_ PragmaOptions=complete dim=0 variable=a_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE ARRAY_PARTITION complete dim=0 variable=a
+        ^
+D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:22:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrixmul_XLX_SEP_ PragmaOptions=complete dim=0 variable=b_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE ARRAY_PARTITION complete dim=0 variable=b
+        ^
+D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:23:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrixmul_XLX_SEP_ PragmaOptions=complete dim=0 variable=r_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE ARRAY_PARTITION complete dim=0 variable=r
+        ^
+D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:7:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrixmul_XLX_SEP_ PragmaOptions=name=matrixmul_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=matrixmul
+        ^
+D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:20:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrixmul_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE UNROLL
+        ^
+D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:15:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrixmul_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE UNROLL
+        ^
+D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:14:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrixmul_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE UNROLL
+        ^
+D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:18:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrixmul_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE UNROLL
+        ^
+D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:12:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrixmul_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE UNROLL
+        ^
+D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:16:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrixmul_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE UNROLL
+        ^
+D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:19:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrixmul_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE UNROLL
+        ^
+D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrixmul_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE UNROLL
+        ^
+D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:13:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrixmul_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE UNROLL
+        ^
+D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/directives.tcl:11:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrixmul_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE UNROLL
+        ^
+15 warnings generated.
