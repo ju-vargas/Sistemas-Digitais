@@ -1,0 +1,89 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "Sum",
+    "pragma": {
+      "name": "UNROLL"
+    },
+    "slx": false,
+    "sourceFile": "D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_area/directives.tcl",
+    "sourceLine": 7,
+    "success": false
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "R_row",
+    "pragma": {
+      "name": "UNROLL"
+    },
+    "slx": false,
+    "sourceFile": "D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_area/directives.tcl",
+    "sourceLine": 8,
+    "success": false
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 2,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "R_col",
+    "pragma": {
+      "name": "UNROLL"
+    },
+    "slx": false,
+    "sourceFile": "D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_area/directives.tcl",
+    "sourceLine": 9,
+    "success": false
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 3,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "matrixmul"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_area/directives.tcl",
+    "sourceLine": 10,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 4,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "matrixmul"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_area/csynth.tcl",
+    "sourceLine": 18,
+    "success": true
+  }
+]

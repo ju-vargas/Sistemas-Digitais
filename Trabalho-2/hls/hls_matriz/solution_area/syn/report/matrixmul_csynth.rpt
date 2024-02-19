@@ -1,0 +1,152 @@
+
+
+================================================================
+== Vitis HLS Report for 'matrixmul'
+================================================================
+* Date:           Mon Feb 19 18:57:11 2024
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        hls_matriz
+* Solution:       solution_area (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a35t-csg325-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.901 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       88|       88|  0.880 us|  0.880 us|   89|   89|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------------+----------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                                            |                                  |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |                  Instance                  |              Module              |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +--------------------------------------------+----------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |grp_matrixmul_Pipeline_Row_a00_sum00_fu_50  |matrixmul_Pipeline_Row_a00_sum00  |       18|       18|   0.180 us|   0.180 us|   18|   18|       no|
+        |grp_matrixmul_Pipeline_Row_a01_sum01_fu_57  |matrixmul_Pipeline_Row_a01_sum01  |       18|       18|   0.180 us|   0.180 us|   18|   18|       no|
+        |grp_matrixmul_Pipeline_Row_a10_sum10_fu_64  |matrixmul_Pipeline_Row_a10_sum10  |       18|       18|   0.180 us|   0.180 us|   18|   18|       no|
+        |grp_matrixmul_Pipeline_Row_a11_sum11_fu_71  |matrixmul_Pipeline_Row_a11_sum11  |       18|       18|   0.180 us|   0.180 us|   18|   18|       no|
+        |grp_matrixmul_Pipeline_Row_r_Col_r_fu_78    |matrixmul_Pipeline_Row_r_Col_r    |        7|        7|  70.000 ns|  70.000 ns|    7|    7|       no|
+        +--------------------------------------------+----------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+----+-------+-------+-----+
+|       Name      | BRAM_18K| DSP|   FF  |  LUT  | URAM|
++-----------------+---------+----+-------+-------+-----+
+|DSP              |        -|   -|      -|      -|    -|
+|Expression       |        -|   -|      -|      -|    -|
+|FIFO             |        -|   -|      -|      -|    -|
+|Instance         |        -|   0|    122|    953|    -|
+|Memory           |        -|   -|      -|      -|    -|
+|Multiplexer      |        -|   -|      -|     87|    -|
+|Register         |        -|   -|     15|      -|    -|
++-----------------+---------+----+-------+-------+-----+
+|Total            |        0|   0|    137|   1040|    0|
++-----------------+---------+----+-------+-------+-----+
+|Available        |      100|  90|  41600|  20800|    0|
++-----------------+---------+----+-------+-------+-----+
+|Utilization (%)  |        0|   0|     ~0|      5|    0|
++-----------------+---------+----+-------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------+----------------------------------+---------+----+----+-----+-----+
+    |                  Instance                  |              Module              | BRAM_18K| DSP| FF | LUT | URAM|
+    +--------------------------------------------+----------------------------------+---------+----+----+-----+-----+
+    |grp_matrixmul_Pipeline_Row_a00_sum00_fu_50  |matrixmul_Pipeline_Row_a00_sum00  |        0|   0|  22|  166|    0|
+    |grp_matrixmul_Pipeline_Row_a01_sum01_fu_57  |matrixmul_Pipeline_Row_a01_sum01  |        0|   0|  22|  170|    0|
+    |grp_matrixmul_Pipeline_Row_a10_sum10_fu_64  |matrixmul_Pipeline_Row_a10_sum10  |        0|   0|  22|  184|    0|
+    |grp_matrixmul_Pipeline_Row_a11_sum11_fu_71  |matrixmul_Pipeline_Row_a11_sum11  |        0|   0|  22|  188|    0|
+    |grp_matrixmul_Pipeline_Row_r_Col_r_fu_78    |matrixmul_Pipeline_Row_r_Col_r    |        0|   0|  34|  245|    0|
+    +--------------------------------------------+----------------------------------+---------+----+----+-----+-----+
+    |Total                                       |                                  |        0|   0| 122|  953|    0|
+    +--------------------------------------------+----------------------------------+---------+----+----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +------------+----+-----------+-----+-----------+
+    |    Name    | LUT| Input Size| Bits| Total Bits|
+    +------------+----+-----------+-----+-----------+
+    |a_address0  |  21|          5|    6|         30|
+    |a_ce0       |  21|          5|    1|          5|
+    |ap_NS_fsm   |  45|         11|    1|         11|
+    +------------+----+-----------+-----+-----------+
+    |Total       |  87|         21|    8|         46|
+    +------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------------------+----+----+-----+-----------+
+    |                           Name                          | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                |  10|   0|   10|          0|
+    |grp_matrixmul_Pipeline_Row_a00_sum00_fu_50_ap_start_reg  |   1|   0|    1|          0|
+    |grp_matrixmul_Pipeline_Row_a01_sum01_fu_57_ap_start_reg  |   1|   0|    1|          0|
+    |grp_matrixmul_Pipeline_Row_a10_sum10_fu_64_ap_start_reg  |   1|   0|    1|          0|
+    |grp_matrixmul_Pipeline_Row_a11_sum11_fu_71_ap_start_reg  |   1|   0|    1|          0|
+    |grp_matrixmul_Pipeline_Row_r_Col_r_fu_78_ap_start_reg    |   1|   0|    1|          0|
+    +---------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                    |  15|   0|   15|          0|
+    +---------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------+-----+-----+------------+--------------+--------------+
+|  RTL Ports | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------+-----+-----+------------+--------------+--------------+
+|ap_clk      |   in|    1|  ap_ctrl_hs|     matrixmul|  return value|
+|ap_rst      |   in|    1|  ap_ctrl_hs|     matrixmul|  return value|
+|ap_start    |   in|    1|  ap_ctrl_hs|     matrixmul|  return value|
+|ap_done     |  out|    1|  ap_ctrl_hs|     matrixmul|  return value|
+|ap_idle     |  out|    1|  ap_ctrl_hs|     matrixmul|  return value|
+|ap_ready    |  out|    1|  ap_ctrl_hs|     matrixmul|  return value|
+|a_address0  |  out|    6|   ap_memory|             a|         array|
+|a_ce0       |  out|    1|   ap_memory|             a|         array|
+|a_q0        |   in|    8|   ap_memory|             a|         array|
+|b_address0  |  out|    2|   ap_memory|             b|         array|
+|b_ce0       |  out|    1|   ap_memory|             b|         array|
+|b_q0        |   in|    8|   ap_memory|             b|         array|
+|r_address0  |  out|    2|   ap_memory|             r|         array|
+|r_ce0       |  out|    1|   ap_memory|             r|         array|
+|r_we0       |  out|    1|   ap_memory|             r|         array|
+|r_d0        |  out|    8|   ap_memory|             r|         array|
++------------+-----+-----+------------+--------------+--------------+
+

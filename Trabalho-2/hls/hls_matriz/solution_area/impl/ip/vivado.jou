@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Feb 19 19:06:31 2024
+# Process ID: 11652
+# Current directory: D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_area/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_area/impl/ip/vivado.log
+# Journal file: D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_area/impl/ip\vivado.jou
+# Running On: DESKTOP-LIT4FMJ, OS: Windows, CPU Frequency: 2904 MHz, CPU Physical cores: 6, Host memory: 17110 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

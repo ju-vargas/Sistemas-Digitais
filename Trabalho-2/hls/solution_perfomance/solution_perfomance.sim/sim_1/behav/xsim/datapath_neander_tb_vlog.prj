@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../solution_perfomance.ip_user_files/ipstatic/hdl/verilog/matrixmul_mul_8s_6s_8_1_1.v" \
+"../../../../solution_perfomance.ip_user_files/ipstatic/hdl/verilog/matrixmul.v" \
+"../../../../solution_perfomance.gen/sources_1/ip/matrixmul_0/sim/matrixmul_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

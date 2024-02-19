@@ -8,13 +8,15 @@ open_project hls_matriz
 set_top matrixmul
 add_files matrixmul.cpp
 add_files matrixmul.h
-add_files -tb matrixmul_test.cpp
+add_files -tb matrixmul_test.cpp -cflags "-Wno-unknown-pragmas"
+add_files -tb matrixmul_test2.cpp
 open_solution "solution_allunroll_dimensioned" -flow_target vivado
-set_part {xc7a35tcsg325-1}
+set_part {xc7a35t-csg325-1}
 create_clock -period 10 -name default
 config_cosim -tool xsim
+config_export -format ip_catalog -output D:/Sistemas-Digitais/Trabalho-2/hls -rtl verilog
 source "./hls_matriz/solution_allunroll_dimensioned/directives.tcl"
 csim_design
 csynth_design
-cosim_design -tool xsim
-export_design -format ip_catalog
+cosim_design
+export_design -rtl verilog -format ip_catalog -output D:/Sistemas-Digitais/Trabalho-2/hls

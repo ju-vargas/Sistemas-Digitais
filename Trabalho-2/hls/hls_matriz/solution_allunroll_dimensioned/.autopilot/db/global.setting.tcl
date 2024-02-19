@@ -45,12 +45,12 @@ set TargetInfo xc7a35t:-csg325:-1
 set SourceFiles {sc {} c ../../matrixmul.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile {}
-set TBFiles {verilog ../../matrixmul_test.cpp bc ../../matrixmul_test.cpp vhdl ../../matrixmul_test.cpp sc ../../matrixmul_test.cpp cas ../../matrixmul_test.cpp c {}}
+set TBFiles {verilog {../../matrixmul_test.cpp ../../matrixmul_test2.cpp} bc {../../matrixmul_test.cpp ../../matrixmul_test2.cpp} sc {../../matrixmul_test.cpp ../../matrixmul_test2.cpp} vhdl {../../matrixmul_test.cpp ../../matrixmul_test2.cpp} c {} cas {../../matrixmul_test.cpp ../../matrixmul_test2.cpp}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
-set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBTops {verilog {} bc {} sc {} vhdl {} c {} cas {}}
+set TBInstNames {verilog {} bc {} sc {} vhdl {} c {} cas {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set TBTVFileNotFound {}

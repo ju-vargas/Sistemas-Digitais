@@ -18,6 +18,6 @@ set_directive_unroll "matrixmul/sum11"
 set_directive_unroll "matrixmul/sum01"
 set_directive_unroll "matrixmul/Row_a11"
 set_directive_unroll "matrixmul/Row_a00"
-set_directive_array_partition -dim 0 -type complete "matrixmul" a
-set_directive_array_partition -dim 0 -type complete "matrixmul" b
-set_directive_array_partition -dim 0 -type complete "matrixmul" r
+set_directive_array_partition -type complete -dim 0 "matrixmul" a
+set_directive_array_partition -type complete -dim 0 "matrixmul" b
+set_directive_array_partition -type complete -dim 0 "matrixmul" r

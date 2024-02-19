@@ -1,0 +1,4 @@
+matrixmul_mul_8s_6s_8_1_1.v,verilog,xil_defaultlib,../../../ipstatic/hdl/verilog/matrixmul_mul_8s_6s_8_1_1.v,
+matrixmul.v,verilog,xil_defaultlib,../../../ipstatic/hdl/verilog/matrixmul.v,
+matrixmul_0.v,verilog,xil_defaultlib,../../../../solution_perfomance.gen/sources_1/ip/matrixmul_0/sim/matrixmul_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

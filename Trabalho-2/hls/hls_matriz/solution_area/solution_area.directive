@@ -1,0 +1,19 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="matrixmul" label="Sum" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="R_row" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="R_col" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="matrixmul" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="matrixmul"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

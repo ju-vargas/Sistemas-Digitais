@@ -37,14 +37,14 @@
 			<location>D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/.apc/.tb</location>
 		</link>
 		<link>
-			<name>solution1/constraints</name>
-			<type>2</type>
-			<location>D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/.tcls</location>
-		</link>
-		<link>
 			<name>solution_allunroll_dimensioned/constraints</name>
 			<type>2</type>
 			<location>D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/.tcls</location>
+		</link>
+		<link>
+			<name>solution_area/constraints</name>
+			<type>2</type>
+			<location>D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_area/.tcls</location>
 		</link>
 		<link>
 			<name>source/matrixmul.cpp</name>
@@ -62,19 +62,9 @@
 			<location>D:/Sistemas-Digitais/Trabalho-2/hls/matrixmul_test.cpp</location>
 		</link>
 		<link>
-			<name>solution1/constraints/.xml.directive</name>
+			<name>testbench/matrixmul_test2.cpp</name>
 			<type>1</type>
-			<location>D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/solution1.directive</location>
-		</link>
-		<link>
-			<name>solution1/constraints/directives.tcl</name>
-			<type>1</type>
-			<location>D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/directives.tcl</location>
-		</link>
-		<link>
-			<name>solution1/constraints/script.tcl</name>
-			<type>1</type>
-			<location>D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution1/script.tcl</location>
+			<location>D:/Sistemas-Digitais/Trabalho-2/hls/matrixmul_test2.cpp</location>
 		</link>
 		<link>
 			<name>solution_allunroll_dimensioned/constraints/.xml.directive</name>
@@ -90,6 +80,21 @@
 			<name>solution_allunroll_dimensioned/constraints/script.tcl</name>
 			<type>1</type>
 			<location>D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/script.tcl</location>
+		</link>
+		<link>
+			<name>solution_area/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_area/solution_area.directive</location>
+		</link>
+		<link>
+			<name>solution_area/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_area/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution_area/constraints/script.tcl</name>
+			<type>1</type>
+			<location>D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_area/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

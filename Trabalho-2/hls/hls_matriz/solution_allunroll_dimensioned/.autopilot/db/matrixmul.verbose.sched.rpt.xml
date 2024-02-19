@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'matrixmul'" level="0">
-<item name = "Date">Wed Feb 14 00:57:19 2024
+<item name = "Date">Mon Feb 19 18:59:19 2024
 </item>
 <item name = "Version">2023.1 (Build 3854077 on May  4 2023)</item>
 <item name = "Project">hls_matriz</item>

@@ -6,5 +6,6 @@
   </source>
   <testbench>
     <originFiles name="matrixmul_test.cpp" path="D:\Sistemas-Digitais\Trabalho-2\hls\matrixmul_test.cpp"/>
+    <originFiles name="matrixmul_test2.cpp" path="D:\Sistemas-Digitais\Trabalho-2\hls\matrixmul_test2.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

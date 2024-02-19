@@ -1,150 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1707883040665">
-  <ports id="1" name="a_0_0" type="PortType" originalName="a" coreId="1702129263" bitwidth="8">
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1708379960425">
+  <ports id="1" name="a_0_0" type="PortType" originalName="a" coreId="1852142702" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="2" name="a_0_1" type="PortType" originalName="a" coreId="790766141" bitwidth="8">
+  <ports id="2" name="a_0_1" type="PortType" originalName="a" coreId="1852142702" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="3" name="a_0_2" type="PortType" originalName="a" coreId="1797268061" bitwidth="8">
+  <ports id="3" name="a_0_2" type="PortType" originalName="a" coreId="1852142702" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="4" name="a_0_3" type="PortType" originalName="a" coreId="1936484399" bitwidth="8">
+  <ports id="4" name="a_0_3" type="PortType" originalName="a" coreId="1852142702" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="5" name="a_0_4" type="PortType" originalName="a" coreId="1831131952" bitwidth="8">
+  <ports id="5" name="a_0_4" type="PortType" originalName="a" coreId="3001546480" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="6" name="a_0_5" type="PortType" originalName="a" coreId="1634755954" bitwidth="8">
+  <ports id="6" name="a_0_5" type="PortType" originalName="a" coreId="3001546480" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="7" name="a_0_6" type="PortType" originalName="a" coreId="1986622563" bitwidth="8">
+  <ports id="7" name="a_0_6" type="PortType" originalName="a" coreId="2228334" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="8" name="a_0_7" type="PortType" originalName="a" coreId="2010177264" bitwidth="8">
+  <ports id="8" name="a_0_7" type="PortType" originalName="a" coreId="1920229741" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="9" name="a_1_0" type="PortType" originalName="a" coreId="1831130080" bitwidth="8">
+  <ports id="9" name="a_1_0" type="PortType" originalName="a" coreId="1936484399" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="10" name="a_1_1" type="PortType" originalName="a" coreId="456488320" bitwidth="8">
+  <ports id="10" name="a_1_1" type="PortType" originalName="a" coreId="1953394531" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="11" name="a_1_2" type="PortType" originalName="a" coreId="1380013858" bitwidth="8">
+  <ports id="11" name="a_1_2" type="PortType" originalName="a" coreId="1701273971" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="12" name="a_1_3" type="PortType" originalName="a" coreId="1836597052" bitwidth="8">
+  <ports id="12" name="a_1_3" type="PortType" originalName="a" coreId="1210187897" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="13" name="a_1_4" type="PortType" originalName="a" coreId="2037368544" bitwidth="8">
+  <ports id="13" name="a_1_4" type="PortType" originalName="a" coreId="1226965113" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="14" name="a_1_5" type="PortType" originalName="a" coreId="1831125088" bitwidth="8">
+  <ports id="14" name="a_1_5" type="PortType" originalName="a" coreId="809120565" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="15" name="a_1_6" type="PortType" originalName="a" coreId="1563439405" bitwidth="8">
+  <ports id="15" name="a_1_6" type="PortType" originalName="a" coreId="544367987" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="16" name="a_1_7" type="PortType" originalName="a" coreId="1831131952" bitwidth="8">
+  <ports id="16" name="a_1_7" type="PortType" originalName="a" coreId="1696608818" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="17" name="a_2_0" type="PortType" originalName="a" coreId="2031867536" bitwidth="8">
+  <ports id="17" name="a_2_0" type="PortType" originalName="a" coreId="542329928" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="18" name="a_2_1" type="PortType" originalName="a" coreId="574451311" bitwidth="8">
+  <ports id="18" name="a_2_1" type="PortType" originalName="a" coreId="1869635840" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="19" name="a_2_2" type="PortType" originalName="a" coreId="1869182069" bitwidth="8">
+  <ports id="19" name="a_2_2" type="PortType" originalName="a" coreId="5195342" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="20" name="a_2_3" type="PortType" originalName="a" coreId="1701998712" bitwidth="8">
+  <ports id="20" name="a_2_3" type="PortType" originalName="a" coreId="7237481" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="21" name="a_2_4" type="PortType" originalName="a" coreId="574454117" bitwidth="8">
+  <ports id="21" name="a_2_4" type="PortType" originalName="a" coreId="1179535650" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="22" name="a_2_5" type="PortType" originalName="a" coreId="1330007625" bitwidth="8">
+  <ports id="22" name="a_2_5" type="PortType" originalName="a" coreId="1931489312" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="23" name="a_2_6" type="PortType" originalName="a" coreId="1734439968" bitwidth="8">
+  <ports id="23" name="a_2_6" type="PortType" originalName="a" coreId="2" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="24" name="a_2_7" type="PortType" originalName="a" coreId="1380927064" bitwidth="8">
+  <ports id="24" name="a_2_7" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="25" name="a_3_0" type="PortType" originalName="a" coreId="543516513" bitwidth="8">
+  <ports id="25" name="a_3_0" type="PortType" originalName="a" coreId="757935405" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="26" name="a_3_1" type="PortType" originalName="a" coreId="543450483" bitwidth="8">
+  <ports id="26" name="a_3_1" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="27" name="a_3_2" type="PortType" originalName="a" coreId="1852795252" bitwidth="8">
+  <ports id="27" name="a_3_2" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="28" name="a_3_3" type="PortType" originalName="a" coreId="1397508187" bitwidth="8">
+  <ports id="28" name="a_3_3" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="29" name="a_3_4" type="PortType" originalName="a" coreId="1213932093" bitwidth="8">
+  <ports id="29" name="a_3_4" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="30" name="a_3_5" type="PortType" originalName="a" coreId="1935961711" bitwidth="8">
+  <ports id="30" name="a_3_5" type="PortType" originalName="a" coreId="4294967295" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="31" name="a_3_6" type="PortType" originalName="a" coreId="1953852527" bitwidth="8">
+  <ports id="31" name="a_3_6" type="PortType" originalName="a" coreId="2" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="32" name="a_3_7" type="PortType" originalName="a" coreId="691026483" bitwidth="8">
+  <ports id="32" name="a_3_7" type="PortType" originalName="a" coreId="3092407840" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="33" name="a_4_0" type="PortType" originalName="a" coreId="1702043749" bitwidth="8">
+  <ports id="33" name="a_4_0" type="PortType" originalName="a" coreId="2" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="34" name="a_4_1" type="PortType" originalName="a" coreId="1646274931" bitwidth="8">
+  <ports id="34" name="a_4_1" type="PortType" originalName="a" coreId="3092405024" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="35" name="a_4_2" type="PortType" originalName="a" coreId="1380927064" bitwidth="8">
+  <ports id="35" name="a_4_2" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="36" name="a_4_3" type="PortType" originalName="a" coreId="1852795252" bitwidth="8">
+  <ports id="36" name="a_4_3" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="37" name="a_4_4" type="PortType" originalName="a" coreId="543450483" bitwidth="8">
+  <ports id="37" name="a_4_4" type="PortType" originalName="a" coreId="406" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="38" name="a_4_5" type="PortType" originalName="a" coreId="1953852527" bitwidth="8">
+  <ports id="38" name="a_4_5" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="39" name="a_4_6" type="PortType" originalName="a" coreId="1213932032" bitwidth="8">
+  <ports id="39" name="a_4_6" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="40" name="a_4_7" type="PortType" originalName="a" coreId="1869182069" bitwidth="8">
+  <ports id="40" name="a_4_7" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="41" name="a_5_0" type="PortType" originalName="a" coreId="1397508187" bitwidth="8">
+  <ports id="41" name="a_5_0" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="42" name="a_5_1" type="PortType" originalName="a" coreId="1734439968" bitwidth="8">
+  <ports id="42" name="a_5_1" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="43" name="a_5_2" type="PortType" originalName="a" coreId="1935961711" bitwidth="8">
+  <ports id="43" name="a_5_2" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="44" name="a_5_3" type="PortType" originalName="a" coreId="691026483" bitwidth="8">
+  <ports id="44" name="a_5_3" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="45" name="a_5_4" type="PortType" originalName="a" coreId="570456421" bitwidth="8">
+  <ports id="45" name="a_5_4" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="46" name="a_5_5" type="PortType" originalName="a" coreId="1702035557" bitwidth="8">
+  <ports id="46" name="a_5_5" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="47" name="a_5_6" type="PortType" originalName="a" coreId="570453615" bitwidth="8">
+  <ports id="47" name="a_5_6" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="48" name="a_5_7" type="PortType" originalName="a" coreId="6645601" bitwidth="8">
+  <ports id="48" name="a_5_7" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="49" name="a_6_0" type="PortType" originalName="a" coreId="1330007625" bitwidth="8">
+  <ports id="49" name="a_6_0" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <ports id="50" name="a_6_1" type="PortType" originalName="a" coreId="0" bitwidth="8">
@@ -162,7 +162,7 @@
   <ports id="54" name="a_6_5" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="55" name="a_6_6" type="PortType" originalName="a" coreId="757935405" bitwidth="8">
+  <ports id="55" name="a_6_6" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <ports id="56" name="a_6_7" type="PortType" originalName="a" coreId="0" bitwidth="8">
@@ -189,7 +189,7 @@
   <ports id="63" name="a_7_6" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="64" name="a_7_7" type="PortType" originalName="a" coreId="1788150000" bitwidth="8">
+  <ports id="64" name="a_7_7" type="PortType" originalName="a" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <ports id="65" name="b_0_0" type="PortType" originalName="b" coreId="0" bitwidth="8">
@@ -198,7 +198,7 @@
   <ports id="66" name="b_0_1" type="PortType" originalName="b" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
-  <ports id="67" name="b_1_0" type="PortType" originalName="b" coreId="2029584480" bitwidth="8">
+  <ports id="67" name="b_1_0" type="PortType" originalName="b" coreId="0" bitwidth="8">
     <dataOutputObjs>read</dataOutputObjs>
   </ports>
   <ports id="68" name="b_1_1" type="PortType" originalName="b" coreId="0" bitwidth="8">
@@ -473,77 +473,77 @@
   <edges id="776" source_obj="//@blocks.0/@node_objs.179" sink_obj="//@ports.71"/>
   <edges id="777" source_obj="//@blocks.0/@node_objs.175" sink_obj="//@blocks.0/@node_objs.179"/>
   <blocks id="399" name="matrixmul" type="BlockType">
-    <node_objs xsi:type="cdfg:CdfgNode" id="218" name="a_0_0_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="2033762656" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="218" name="a_0_0_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="3089979024" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="59" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_0_0</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="219" name="a_0_1_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="2033762656" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="219" name="a_0_1_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="3089979024" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="59" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_0_1</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="220" name="a_0_2_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="2033762656" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="220" name="a_0_2_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="3089979024" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="59" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_0_2</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="221" name="a_0_3_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="1969520240" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="221" name="a_0_3_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="3089979024" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="59" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_0_3</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="222" name="a_1_0_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="2033982896" bitwidth="8" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="222" name="a_1_0_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="3089979024" bitwidth="8" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="59" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_1_0</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="223" name="a_1_1_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="2033861912" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="223" name="a_1_1_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="3081849584" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="59" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_1_1</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="224" name="a_1_2_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="2033762656" bitwidth="8" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="224" name="a_1_2_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="1869903201" bitwidth="8" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="59" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_1_2</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="225" name="a_1_3_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="2033762656" bitwidth="8" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="225" name="a_1_3_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="3081551216" bitwidth="8" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="59" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_1_3</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="226" name="a_2_0_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="2033762656" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="226" name="a_2_0_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="3089979024" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="59" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_2_0</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="227" name="a_2_1_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="2033762656" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="227" name="a_2_1_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="762536301" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="59" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_2_1</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="228" name="a_2_2_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="2033762656" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="228" name="a_2_2_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="3089979024" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="59" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_2_2</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="229" name="a_2_3_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="2033762656" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="229" name="a_2_3_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="2997174760" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="59" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_2_3</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="230" name="a_3_0_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="2033762656" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="230" name="a_3_0_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="3089979024" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="59" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_3_0</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="231" name="a_3_1_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="2044796304" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="231" name="a_3_1_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="4294967295" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="59" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_3_1</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="232" name="a_3_2_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="2043399072" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="232" name="a_3_2_read" lineNumber="59" fileName="matrixmul.cpp" fileDirectory="../." coreId="4294967295" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="59" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_3_2</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
@@ -645,17 +645,17 @@
       <dataOutputObjs>bitselect</dataOutputObjs>
       <dataOutputObjs>partselect</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="249" name="a_0_4_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="4294967295" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="249" name="a_0_4_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="3095568144" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="65" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_0_4</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="250" name="a_0_5_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="4294967295" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="250" name="a_0_5_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="3094272720" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="65" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_0_5</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="251" name="a_0_6_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="2043397872" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="251" name="a_0_6_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="4294967295" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="53" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="65" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_0_6</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
@@ -665,12 +665,12 @@
       <dataInputObjs>a_0_7</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="253" name="a_1_4_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="4294967295" bitwidth="8" opcode="read" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="253" name="a_1_4_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="3095568144" bitwidth="8" opcode="read" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="65" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_1_4</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="254" name="a_1_5_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="2044796304" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="254" name="a_1_5_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="4294967295" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="65" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_1_5</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
@@ -680,7 +680,7 @@
       <dataInputObjs>a_1_6</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="256" name="a_1_7_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="4294967295" bitwidth="8" opcode="read" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="256" name="a_1_7_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="3095568144" bitwidth="8" opcode="read" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="65" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_1_7</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
@@ -695,12 +695,12 @@
       <dataInputObjs>a_2_5</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="259" name="a_2_6_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="2044796304" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="259" name="a_2_6_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="3095568144" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="65" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_2_6</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="260" name="a_2_7_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="2044796304" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="260" name="a_2_7_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="4294967295" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="59" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="65" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_2_7</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
@@ -715,12 +715,12 @@
       <dataInputObjs>a_3_5</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="263" name="a_3_6_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="0" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="263" name="a_3_6_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="3095568144" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="65" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_3_6</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="264" name="a_3_7_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="4294967295" bitwidth="8" opcode="read" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="264" name="a_3_7_read" lineNumber="65" fileName="matrixmul.cpp" fileDirectory="../." coreId="3094251280" bitwidth="8" opcode="read" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="65" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_3_7</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
@@ -817,7 +817,7 @@
       <dataOutputObjs>bitselect</dataOutputObjs>
       <dataOutputObjs>partselect</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="280" name="a_4_0_read" lineNumber="71" fileName="matrixmul.cpp" fileDirectory="../." coreId="4294967295" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="280" name="a_4_0_read" lineNumber="71" fileName="matrixmul.cpp" fileDirectory="../." coreId="3095568144" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="71" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_4_0</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
@@ -827,17 +827,17 @@
       <dataInputObjs>a_4_1</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="282" name="a_4_2_read" lineNumber="71" fileName="matrixmul.cpp" fileDirectory="../." coreId="2044796304" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="282" name="a_4_2_read" lineNumber="71" fileName="matrixmul.cpp" fileDirectory="../." coreId="4294967295" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="71" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_4_2</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="283" name="a_4_3_read" lineNumber="71" fileName="matrixmul.cpp" fileDirectory="../." coreId="2043403872" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="283" name="a_4_3_read" lineNumber="71" fileName="matrixmul.cpp" fileDirectory="../." coreId="4294967295" bitwidth="8" opcode="read" nodeLabel="1.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="71" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_4_3</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="284" name="a_5_0_read" lineNumber="71" fileName="matrixmul.cpp" fileDirectory="../." coreId="4294967295" bitwidth="8" opcode="read" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="284" name="a_5_0_read" lineNumber="71" fileName="matrixmul.cpp" fileDirectory="../." coreId="3095568144" bitwidth="8" opcode="read" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="71" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_5_0</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
@@ -852,7 +852,7 @@
       <dataInputObjs>a_5_2</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>
     </node_objs>
-    <node_objs xsi:type="cdfg:CdfgNode" id="287" name="a_5_3_read" lineNumber="71" fileName="matrixmul.cpp" fileDirectory="../." coreId="2044796304" bitwidth="8" opcode="read" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+    <node_objs xsi:type="cdfg:CdfgNode" id="287" name="a_5_3_read" lineNumber="71" fileName="matrixmul.cpp" fileDirectory="../." coreId="4294967295" bitwidth="8" opcode="read" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
       <inlineStackInfo fileName="matrixmul.cpp" linenumber="71" fileDirectory="D:\Sistemas-Digitais\Trabalho-2\hls"/>
       <dataInputObjs>a_5_3</dataInputObjs>
       <dataOutputObjs>add</dataOutputObjs>

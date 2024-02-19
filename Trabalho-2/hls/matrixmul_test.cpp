@@ -45,25 +45,41 @@ ALL TIMES.
 *******************************************************************************/
 #include <iostream>
 #include "matrixmul.h"
+#include <algorithm>
 
 using namespace std;
 
 int main(int argc, char **argv)
 {
-   mat_a_t in_mat_a[8][8] = {
-      {1,1,1,1,5,5,5,5},
-      {1,1,1,1,5,5,5,5},
-	  {1,1,1,1,5,5,5,5},
-	  {1,1,1,1,5,5,5,5},
-      {-1,-1,-1,-1,-5,-5,-5,-5},
-      {-1,-1,-1,-1,-5,-5,-5,-5},
-	  {-1,-1,-1,-1,-5,-5,-5,-5},
-	  {-1,-1,-1,-1,-5,-5,-5,-5},
+   mat_a_t in_mat_a_1[8][8] = {
+      {1,2,3,4,5,6,7,8},
+	  {-1,-2,-3,-4,-5,-6,-7,-8},
+	  {1,2,3,4,5,5,5,5},
+	  {-1,-2,-3,-4,-5,-6,-7,-8},
+	  {1,2,3,4,5,6,7,8},
+      {-2,-2,-2,-2,-2,-2,-2,-2},
+	  {1,2,3,4,5,6,7,8},
+	  {-1,-2,-3,-4,-5,-6,-7,-8},
    };
-   mat_b_t in_mat_b[2][2] = {
+   mat_b_t in_mat_b_1[2][2] = {
 	   {1,-1},
 	   {-1,1}
    };
+
+	mat_a_t in_mat_a_2[8][8] = {
+		{1,1,1,1,5,5,5,5},
+		{1,1,1,1,5,5,5,5},
+		{1,1,1,1,5,5,5,5},
+		{1,1,1,1,5,5,5,5},
+		{-1,-1,-1,-1,-5,-5,-5,-5},
+		{-1,-1,-1,-1,-5,-5,-5,-5},
+		{-1,-1,-1,-1,-5,-5,-5,-5},
+		{-1,-1,-1,-1,-5,-5,-5,-5},
+	};
+	mat_b_t in_mat_b_2[2][2] = {
+		{-1,1},
+		{1,-1}
+	};
 
    mat_b_t mat_error[2][2] = {
 	   {0,0},
@@ -71,20 +87,19 @@ int main(int argc, char **argv)
   };
 
 
-   result_t hw_result[2][2], sw_result[2][2];
+   result_t hw_result_1[2][2], sw_result_1[2][2];
+   result_t hw_result_2[2][2], sw_result_2[2][2];
+
    int err_cnt = 0;
 
-   // Generate the expected result
-   // Iterate over the rows of the A matrix
 	signed char sum[MAT_R_ROWS][MAT_R_COLS] = {0}; //8bits
 	signed char avg[MAT_R_ROWS][MAT_R_COLS] = {0}; //8bits
-	//print matrix error results
 
 	for(int i = 0; i < MAT_R_ROWS; i++){
 		for(int j = 0; j < MAT_R_COLS; j++){
 			for(int i_a = 0; i_a < MAT_A_ROWS/2; i_a++){
 				for(int k = 0; k < MAT_A_COLS/2; k++) {
-					sum[i][j] += in_mat_a[i_a+(i*4)][k+(j*4)];
+					sum[i][j] += in_mat_a_1[i_a+(i*4)][k+(j*4)];
 				}
 			}
 		}
@@ -98,21 +113,47 @@ int main(int argc, char **argv)
 
 	for(int i = 0; i < MAT_R_ROWS; i++){
 		for(int j = 0; j < MAT_R_COLS; j++){
-			sw_result[i][j] = (avg[i][j] * in_mat_b[i][j]);
+			sw_result_1[i][j] = (avg[i][j] * in_mat_b_1[i][j]);
+		}
+	}
+
+	std::fill(&avg[0][0], &avg[0][0] + MAT_R_ROWS * MAT_R_COLS, 0);
+	std::fill(&sum[0][0], &sum[0][0] + MAT_R_ROWS * MAT_R_COLS, 0);
+
+	for(int i = 0; i < MAT_R_ROWS; i++){
+		for(int j = 0; j < MAT_R_COLS; j++){
+			for(int i_a = 0; i_a < MAT_A_ROWS/2; i_a++){
+				for(int k = 0; k < MAT_A_COLS/2; k++) {
+					sum[i][j] += in_mat_a_2[i_a+(i*4)][k+(j*4)];
+				}
+			}
+		}
+	}
+
+	for(int i = 0; i < MAT_R_ROWS; i++){
+		for(int j = 0; j < MAT_R_COLS; j++){
+			avg[i][j] = (sum[i][j] / 16);
+		}
+	}
+
+	for(int i = 0; i < MAT_R_ROWS; i++){
+		for(int j = 0; j < MAT_R_COLS; j++){
+			sw_result_2[i][j] = (avg[i][j] * in_mat_b_2[i][j]);
 		}
 	}
 
 
    // Compare TB vs HW C-model and/or RTL
    // Run matrix multiply block
-   matrixmul(in_mat_a,in_mat_b, hw_result);
+   matrixmul(in_mat_a_1,in_mat_b_1, hw_result_1);
+   matrixmul(in_mat_a_2,in_mat_b_2, hw_result_2);
    //matrixmul(in_mat_a,mat_error, hw_result); simulate error
 
    // Compare hw_result with sw_result
    for (int i = 0; i < MAT_R_ROWS; i++) {
       for (int j = 0; j < MAT_R_COLS; j++) {
          // Check HW result against SW
-         if (hw_result[i][j] != sw_result[i][j]) {
+         if (hw_result_1[i][j] != sw_result_1[i][j]) {
             err_cnt++;
          }
 
@@ -123,32 +164,53 @@ int main(int argc, char **argv)
    if (err_cnt){
 	  cout << "\n" << endl;
       cout << ">> ERROR: " << err_cnt << " mismatches detected!" << endl;
-
-      //print matrix error results
-      cout << "Matrix results:" << endl;
-	  for (int i = 0; i < MAT_R_ROWS; i++) {
-		  cout << "\n" << endl;
-		  for (int j = 0; j < MAT_R_COLS; j++) {
-			 cout << hw_result[i][j] << " ";
-		  }
-	  }
-	 cout << "\n" << endl;
-
    }
    else{
 	  cout << "\n" << endl;
       cout << "Test passes!! \n" << endl;
+   }
+
+   //print matrix results
+	cout << "Matrix results:" << endl;
+	 for (int i = 0; i < MAT_R_ROWS; i++) {
+		  cout << "\n" << endl;
+		  for (int j = 0; j < MAT_R_COLS; j++) {
+			  printf("%d ", hw_result_1[i][j]);
+		  }
+	   }
+	 cout << "\n" << endl;
+
+   err_cnt = 0;
+
+   // Compare hw_result with sw_result
+  for (int i = 0; i < MAT_R_ROWS; i++) {
+	 for (int j = 0; j < MAT_R_COLS; j++) {
+		// Check HW result against SW
+		if (hw_result_2[i][j] != sw_result_2[i][j]) {
+		   err_cnt++;
+		}
+
+	 }
+  }
+
+
+  if (err_cnt){
+  	  cout << "\n" << endl;
+        cout << ">> ERROR: " << err_cnt << " mismatches detected!" << endl;
+     }
+     else{
+  	  cout << "\n" << endl;
+        cout << "Test passes!! \n" << endl;
+     }
 
      //print matrix results
-     cout << "Matrix results:" << endl;
-   	 for (int i = 0; i < MAT_R_ROWS; i++) {
-   		  cout << "\n" << endl;
-   		  for (int j = 0; j < MAT_R_COLS; j++) {
-   			  printf("%d ", hw_result[i][j]);
-   		  }
-   	   }
-   	 cout << "\n" << endl;
-   }
- // return err_cnt;
+  	cout << "Matrix results:" << endl;
+  	 for (int i = 0; i < MAT_R_ROWS; i++) {
+  		  cout << "\n" << endl;
+  		  for (int j = 0; j < MAT_R_COLS; j++) {
+  			  printf("%d ", hw_result_2[i][j]);
+  		  }
+  	   }
+  	 cout << "\n" << endl;
 }
 

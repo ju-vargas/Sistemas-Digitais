@@ -1,0 +1,7 @@
+   Build using "D:/Xilinx/Vitis_HLS/2023.1/tps/win64/msys64/mingw64/bin/g++"
+   Compiling matrixmul.cpp_pre.cpp.tb.cpp
+   Compiling matrixmul_test2.cpp_pre.cpp.tb.cpp
+   Compiling apatb_matrixmul.cpp
+   Compiling matrixmul_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_matrixmul_ir.ll
+   Generating cosim.tv.exe
