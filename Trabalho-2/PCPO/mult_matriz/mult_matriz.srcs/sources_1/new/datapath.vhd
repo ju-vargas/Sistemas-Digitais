@@ -45,8 +45,8 @@ architecture Behavioral of datapath is
     --regs
     signal S0: std_logic_vector (71 downto 0); -- 8 valores de 9 bits
     signal S1: std_logic_vector (39 downto 0); -- 4 valores de 10 bits
-    signal S2: std_logic_vector (21 downto 0);-- 2 valores de 11 bits
-    signal S3: std_logic_vector (11 downto 0);             -- 1 valor de 12 bits
+    signal S2: std_logic_vector (21 downto 0); -- 2 valores de 11 bits
+    signal S3: std_logic_vector (11 downto 0); -- 1 valor de 12 bits
     
     signal buffer_shift: std_logic_vector (7 downto 0); -- 1 valor de 8 bits
     
