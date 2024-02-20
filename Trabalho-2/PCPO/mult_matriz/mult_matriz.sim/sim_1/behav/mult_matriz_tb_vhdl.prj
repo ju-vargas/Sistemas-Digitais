@@ -1,0 +1,5 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../mult_matriz.srcs/sim_1/new/mult_matriz_tb.vhd"
+
+# Do not sort compile order
+nosort
