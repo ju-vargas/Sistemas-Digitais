@@ -9,4 +9,4 @@ then
 exit $RETVAL
 fi
 }
-ExecStep $xv_path/bin/xsim mult_matriz_tb_behav -key {Behavioral:sim_1:Functional:mult_matriz_tb} -tclbatch mult_matriz_tb.tcl -log simulate.log
+ExecStep $xv_path/bin/xsim datapath_neander_tb_behav -key {Behavioral:sim_1:Functional:datapath_neander_tb} -tclbatch datapath_neander_tb.tcl -view /media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Trabalho-2/PCPO/mult_matriz/datapath_neander_tb_behav.wcfg -log simulate.log

@@ -1,1 +1,0 @@
--wto "d953630185214d3b80f40e29ea0c636e" --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "mult_matriz_tb_behav" "xil_defaultlib.mult_matriz_tb" -log "elaborate.log" 

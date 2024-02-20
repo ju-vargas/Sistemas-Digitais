@@ -15,16 +15,16 @@ architecture bench of datapath_neander_tb is
            rst: in STD_LOGIC;
            done : in STD_LOGIC;
            data: in STD_LOGIC_VECTOR (127 downto 0);
-           R0: out STD_LOGIC_VECTOR (18 downto 0);
-           R1: out STD_LOGIC_VECTOR (18 downto 0));
+           R0: out STD_LOGIC_VECTOR (15 downto 0);
+           R1: out STD_LOGIC_VECTOR (15 downto 0));
     end component;
     
     signal clk : STD_LOGIC;
     signal rst : STD_LOGIC;
     signal done : STD_LOGIC;
     signal data: STD_LOGIC_VECTOR (127 downto 0);
-    signal R0:  STD_LOGIC_VECTOR (18 downto 0);
-    signal R1:  STD_LOGIC_VECTOR (18 downto 0);
+    signal R0:  STD_LOGIC_VECTOR (15 downto 0);
+    signal R1:  STD_LOGIC_VECTOR (15 downto 0);
         
     constant clock_period: time := 10 ns;
     signal stop_the_clock: boolean; 

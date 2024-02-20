@@ -24,7 +24,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
@@ -36,8 +38,8 @@ entity datapath is
            rst: in STD_LOGIC;
            done : in STD_LOGIC;
            data: in STD_LOGIC_VECTOR (127 downto 0);
-           R0: out STD_LOGIC_VECTOR (18 downto 0);
-           R1: out STD_LOGIC_VECTOR (18 downto 0));
+           R0: out STD_LOGIC_VECTOR (15 downto 0);
+           R1: out STD_LOGIC_VECTOR (15 downto 0));
 end datapath;
 
 architecture Behavioral of datapath is
@@ -50,41 +52,41 @@ architecture Behavioral of datapath is
     
     signal buffer_shift: std_logic_vector (7 downto 0); -- 1 valor de 8 bits
     
-    signal R0_buf: std_logic_vector (18 downto 0);
-    signal R1_buf: std_logic_vector (18 downto 0);
+    signal R0_buf: std_logic_vector (15 downto 0);
+    signal R1_buf: std_logic_vector (15 downto 0);
     --wires
     
     --components
-    COMPONENT mult_data
+    COMPONENT multiplier
       PORT (
         CLK : IN STD_LOGIC;
-        A : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
+        A : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
         B : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
-        P : OUT STD_LOGIC_VECTOR(19 DOWNTO 0)
+        P : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
       );
     END COMPONENT;
 begin
 -- instantiations ========================================================================================================================================
     -- (port maps)
-    multiplier : mult_data
+    mult_data : multiplier
     PORT MAP (
         CLK => CLK,
-        A => data,
+        A => "00000001",
         B => buffer_shift,
         P => R0_buf
     );
 -- Statements ============================================================================================================================================
 -- (combinational and sequential) 
 
-    RO <= R0_buf;
+    R0 <= R0_buf;
     R1 <= R1_buf;
     
 
     process(clk, rst) 
     begin
         if rst = '1' then
-            R0 <= "00000000";
-            R1 <= "00000000";
+            R0 <= "0000000000000000";
+            R1 <= "0000000000000000";
         elsif clk'event and clk='1' then
             S0(8 downto 0)   <= '0' & data( 7 downto 0) + '0' & data(15 downto 8);
             S0(17 downto 9)  <= '0' & data(23 downto 16) + '0' & data(31 downto 24);
@@ -107,7 +109,7 @@ begin
             
             buffer_shift <= S3(11 downto 4); 
             
-            R1_buf <= RO_buf;
+            R1_buf <= R0_buf;
         end if; 
         
             

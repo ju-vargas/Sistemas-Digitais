@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="datapath_neander_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="datapath_neander_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="5000001fs"></ZoomEndTime>
+      <Cursor1Time time="547000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="17" />
+   <wvobject db_ref_id="1" type="logic" fp_name="/datapath_neander_tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/datapath_neander_tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="logic" fp_name="/datapath_neander_tb/done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/datapath_neander_tb/data">
+      <obj_property name="ElementShortName">data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">data[127:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/datapath_neander_tb/R0">
+      <obj_property name="ElementShortName">R0[19:0]</obj_property>
+      <obj_property name="ObjectShortName">R0[19:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/datapath_neander_tb/R1">
+      <obj_property name="ElementShortName">R1[19:0]</obj_property>
+      <obj_property name="ObjectShortName">R1[19:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="other" fp_name="/datapath_neander_tb/stop_the_clock">
+      <obj_property name="ElementShortName">stop_the_clock</obj_property>
+      <obj_property name="ObjectShortName">stop_the_clock</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="other" fp_name="/datapath_neander_tb/clock_period">
+      <obj_property name="ElementShortName">clock_period</obj_property>
+      <obj_property name="ObjectShortName">clock_period</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/datapath_neander_tb/UUT/R0">
+      <obj_property name="ElementShortName">R0[19:0]</obj_property>
+      <obj_property name="ObjectShortName">R0[19:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/datapath_neander_tb/UUT/R1">
+      <obj_property name="ElementShortName">R1[19:0]</obj_property>
+      <obj_property name="ObjectShortName">R1[19:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/datapath_neander_tb/UUT/S0">
+      <obj_property name="ElementShortName">S0[71:0]</obj_property>
+      <obj_property name="ObjectShortName">S0[71:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/datapath_neander_tb/UUT/S1">
+      <obj_property name="ElementShortName">S1[39:0]</obj_property>
+      <obj_property name="ObjectShortName">S1[39:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/datapath_neander_tb/UUT/S2">
+      <obj_property name="ElementShortName">S2[21:0]</obj_property>
+      <obj_property name="ObjectShortName">S2[21:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/datapath_neander_tb/UUT/S3">
+      <obj_property name="ElementShortName">S3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">S3[11:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/datapath_neander_tb/UUT/buffer_shift">
+      <obj_property name="ElementShortName">buffer_shift[7:0]</obj_property>
+      <obj_property name="ObjectShortName">buffer_shift[7:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/datapath_neander_tb/UUT/R0_buf">
+      <obj_property name="ElementShortName">R0_buf[19:0]</obj_property>
+      <obj_property name="ObjectShortName">R0_buf[19:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" type="array" fp_name="/datapath_neander_tb/UUT/R1_buf">
+      <obj_property name="ElementShortName">R1_buf[19:0]</obj_property>
+      <obj_property name="ObjectShortName">R1_buf[19:0]</obj_property>
+   </wvobject>
+</wave_config>

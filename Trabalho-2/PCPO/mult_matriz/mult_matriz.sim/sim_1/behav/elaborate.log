@@ -1,6 +1,6 @@
 Vivado Simulator 2015.4
 Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
-Running: /media/juliana/Lin/Xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto d953630185214d3b80f40e29ea0c636e --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot mult_matriz_tb_behav xil_defaultlib.mult_matriz_tb -log elaborate.log 
+Running: /media/juliana/Lin/Xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto d953630185214d3b80f40e29ea0c636e --debug typical --relax --mt 8 -L xbip_utils_v3_0_5 -L xbip_pipe_v3_0_1 -L xbip_bram18k_v3_0_1 -L mult_gen_v12_0_10 -L xil_defaultlib -L secureip --snapshot datapath_neander_tb_behav xil_defaultlib.datapath_neander_tb -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -9,5 +9,27 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package ieee.std_logic_1164
-Compiling architecture behavioral of entity xil_defaultlib.mult_matriz_tb
-Built simulation snapshot mult_matriz_tb_behav
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package mult_gen_v12_0_10.mult_gen_v12_0_10_viv_comp
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_5.xbip_utils_v3_0_5_pkg
+Compiling package mult_gen_v12_0_10.mult_gen_v12_0_10_pkg
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2("1000")(0,3)\]
+Compiling architecture mult_and_v of entity unisim.MULT_AND [mult_and_default]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_10.op_resize [\op_resize(8,8,0,0,0,11,8)\]
+Compiling architecture xilinx of entity mult_gen_v12_0_10.luts [\luts("artix7",8,0,8,0,0,0,3,0,1...]
+Compiling architecture xilinx of entity mult_gen_v12_0_10.mult_gen_v12_0_10_viv [\mult_gen_v12_0_10_viv(0,0,1,"ar...]
+Compiling architecture xilinx of entity mult_gen_v12_0_10.mult_gen_v12_0_10 [\mult_gen_v12_0_10(0,0,1,"artix7...]
+Compiling architecture multiplier_arch of entity xil_defaultlib.multiplier [multiplier_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture bench of entity xil_defaultlib.datapath_neander_tb
+Built simulation snapshot datapath_neander_tb_behav
