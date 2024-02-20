@@ -60,7 +60,6 @@ typedef signed char mat_a_t; //8bits
 typedef signed char mat_b_t; //8bits
 typedef signed char result_t; //8bits
 
-// Prototype of top level function for C-synthesis
 void matrixmul(
       mat_a_t a[MAT_A_ROWS][MAT_A_COLS],
       mat_b_t b[MAT_B_ROWS][MAT_B_COLS],

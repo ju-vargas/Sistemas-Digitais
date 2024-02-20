@@ -1,7 +1,5 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-   Compiling ../../../../matrixmul_test.cpp in debug mode
-   Compiling ../../../../matrixmul_test2.cpp in debug mode
    Compiling ../../../../matrixmul.cpp in debug mode
    Generating csim.exe
 

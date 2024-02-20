@@ -51,8 +51,7 @@ void matrixmul(
       mat_b_t b[MAT_B_ROWS][MAT_B_COLS],
       result_t r[MAT_R_ROWS][MAT_R_COLS])
 {
-	signed char sum[MAT_R_ROWS][MAT_R_COLS] = {}; //8bits
-	signed char avg[MAT_R_ROWS][MAT_R_COLS] = {}; //8bits
+	signed __int16 sum[MAT_R_ROWS][MAT_R_COLS] = {}; //16bits
 
 	Row_a00: for(int i_a = 0; i_a < MAT_A_ROWS/2; i_a++){
 		sum00: for(int j_a = 0; j_a < MAT_A_COLS/2; j_a++) {

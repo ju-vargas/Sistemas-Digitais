@@ -2,10 +2,10 @@ ECHO est  desativado.
 ECHO est  desativado.
 NOTE: Using modified tcl85t.dll from https://gitenterprise.xilinx.com/ACT/vitis_hls_tcl
 INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2023.1/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'arthu' on host 'desktop-lit4fmj' (Windows NT_amd64 version 6.2) on Mon Feb 19 19:06:25 -0300 2024
+INFO: [HLS 200-10] For user 'arthu' on host 'desktop-lit4fmj' (Windows NT_amd64 version 6.2) on Tue Feb 20 01:47:00 -0300 2024
 INFO: [HLS 200-10] In directory 'D:/Sistemas-Digitais/Trabalho-2/hls'
-Sourcing Tcl script 'D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_area/export.tcl'
-INFO: [HLS 200-1510] Running: source D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_area/export.tcl
+Sourcing Tcl script 'D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/csim.tcl'
+INFO: [HLS 200-1510] Running: source D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/csim.tcl
 INFO: [HLS 200-1510] Running: open_project hls_matriz 
 INFO: [HLS 200-10] Opening project 'D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz'.
 INFO: [HLS 200-1510] Running: set_top matrixmul 
@@ -15,10 +15,10 @@ INFO: [HLS 200-1510] Running: add_files matrixmul.h
 INFO: [HLS 200-10] Adding design file 'matrixmul.h' to the project
 INFO: [HLS 200-1510] Running: add_files -tb matrixmul_test.cpp -cflags -Wno-unknown-pragmas 
 INFO: [HLS 200-10] Adding test bench file 'matrixmul_test.cpp' to the project
-INFO: [HLS 200-1510] Running: add_files -tb matrixmul_test2.cpp 
+INFO: [HLS 200-1510] Running: add_files -tb matrixmul_test2.cpp -cflags -Wno-unknown-pragmas 
 INFO: [HLS 200-10] Adding test bench file 'matrixmul_test2.cpp' to the project
-INFO: [HLS 200-1510] Running: open_solution solution_area -flow_target vivado 
-INFO: [HLS 200-10] Opening solution 'D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_area'.
+INFO: [HLS 200-1510] Running: open_solution solution_allunroll_dimensioned -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-1611] Setting target device to 'xc7a35t-csg325-1'
 INFO: [HLS 200-1505] Using flow_target 'vivado'
@@ -31,29 +31,53 @@ INFO: [HLS 200-1510] Running: set_part xc7a35t-csg325-1
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
 INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
 INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output D:/Sistemas-Digitais/Trabalho-2/hls -rtl verilog 
-INFO: [HLS 200-1510] Running: source ./hls_matriz/solution_area/directives.tcl
+INFO: [HLS 200-1510] Running: source ./hls_matriz/solution_allunroll_dimensioned/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name matrixmul matrixmul 
 INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Sum 
 INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/R_row 
 INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/R_col 
-INFO: [HLS 200-1510] Running: set_directive_top -name matrixmul matrixmul 
-INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output D:/Sistemas-Digitais/Trabalho-2/hls 
-INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
-ECHO est  desativado.
-ECHO est  desativado.
-
-****** Vivado v2023.1 (64-bit)
-  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
-  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
-  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-
-source run_ippack.tcl -notrace
-ipx::create_core: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 448.938 ; gain = 155.555
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Mon Feb 19 19:06:41 2024...
-INFO: [HLS 200-802] Generated output file export.zip
-INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 14.24 seconds; current allocated memory: 6.652 MB.
-INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 16.584 seconds; peak allocated memory: 113.273 MB.
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Col_r 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_a10 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_r 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_a01 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/sum00 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/sum10 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/sum11 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/sum01 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_a11 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_a00 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type complete -dim 0 matrixmul a 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type complete -dim 0 matrixmul b 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type complete -dim 0 matrixmul r 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../matrixmul.cpp in debug mode
+   Generating csim.exe
+
+
+Test passes!! 
+
+Matrix results:
+
+
+0 0 
+
+0 1 
+
+
+
+Test passes!! 
+
+Matrix results:
+
+
+-1 5 
+
+-1 5 
+
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.685 seconds; current allocated memory: 0.520 MB.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 5.791 seconds; peak allocated memory: 107.727 MB.

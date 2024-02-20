@@ -11,8 +11,8 @@
         <file name="../../matrixmul_test2.cpp" sc="0" tb="1" cflags="-Wno-unknown-pragmas" csimflags="" blackbox="false"/>
     </files>
     <solutions xmlns="">
-        <solution name="solution_allunroll_dimensioned" status="inactive"/>
-        <solution name="solution_area" status="active"/>
+        <solution name="solution_allunroll_dimensioned" status="active"/>
+        <solution name="solution_area" status="inactive"/>
     </solutions>
 </project>
 

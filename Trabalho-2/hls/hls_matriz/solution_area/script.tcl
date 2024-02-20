@@ -9,7 +9,7 @@ set_top matrixmul
 add_files matrixmul.cpp
 add_files matrixmul.h
 add_files -tb matrixmul_test.cpp -cflags "-Wno-unknown-pragmas"
-add_files -tb matrixmul_test2.cpp
+add_files -tb matrixmul_test2.cpp -cflags "-Wno-unknown-pragmas"
 open_solution "solution_area" -flow_target vivado
 set_part {xc7a35t-csg325-1}
 create_clock -period 10 -name default

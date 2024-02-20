@@ -1129,3 +1129,363 @@ Command   export_design done; 14.992 sec.
 INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 14.992 seconds; current allocated memory: 9.457 MB.
 Command ap_source done; 16.407 sec.
 Execute cleanup_all 
+INFO-FLOW: Workspace D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned opened at Tue Feb 20 01:30:59 -0300 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7a35t-csg325-1 
+Execute       create_platform xc7a35t-csg325-1 -board  
+DBG:HLSDevice: Trying to load device library: D:/Xilinx/Vitis_HLS/2023.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/Xilinx/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-csg325-1'
+Command       create_platform done; 1.086 sec.
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.195 sec.
+Execute       ap_part_info -name xc7a35t-csg325-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.328 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -tool=xsim 
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+Execute     config_cosim -tool=xsim 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=D:/Sistemas-Digitais/Trabalho-2/hls 
+INFO: [HLS 200-1464] Running solution command: config_export -output=D:/Sistemas-Digitais/Trabalho-2/hls
+Execute     config_export -output=D:/Sistemas-Digitais/Trabalho-2/hls 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 1.597 sec.
+Execute   set_part xc7a35t-csg325-1 
+INFO: [HLS 200-1510] Running: set_part xc7a35t-csg325-1 
+Execute     create_platform xc7a35t-csg325-1 -board  
+Execute     source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.107 sec.
+Execute     ap_part_info -name xc7a35t-csg325-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.14 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+Execute   config_export -format ip_catalog -output D:/Sistemas-Digitais/Trabalho-2/hls -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output D:/Sistemas-Digitais/Trabalho-2/hls -rtl verilog 
+Execute   source ./hls_matriz/solution_allunroll_dimensioned/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./hls_matriz/solution_allunroll_dimensioned/directives.tcl
+Execute     set_directive_top -name matrixmul matrixmul 
+INFO: [HLS 200-1510] Running: set_directive_top -name matrixmul matrixmul 
+Execute     set_directive_unroll matrixmul/Sum 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Sum 
+Execute     set_directive_unroll matrixmul/R_row 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/R_row 
+Execute     set_directive_unroll matrixmul/R_col 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/R_col 
+Execute     set_directive_unroll matrixmul/Col_r 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Col_r 
+Execute     set_directive_unroll matrixmul/Row_a10 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_a10 
+Execute     set_directive_unroll matrixmul/Row_r 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_r 
+Execute     set_directive_unroll matrixmul/Row_a01 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_a01 
+Execute     set_directive_unroll matrixmul/sum00 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/sum00 
+Execute     set_directive_unroll matrixmul/sum10 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/sum10 
+Execute     set_directive_unroll matrixmul/sum11 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/sum11 
+Execute     set_directive_unroll matrixmul/sum01 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/sum01 
+Execute     set_directive_unroll matrixmul/Row_a11 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_a11 
+Execute     set_directive_unroll matrixmul/Row_a00 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_a00 
+Execute     set_directive_array_partition -type complete -dim 0 matrixmul a 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type complete -dim 0 matrixmul a 
+Execute     set_directive_array_partition -type complete -dim 0 matrixmul b 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type complete -dim 0 matrixmul b 
+Execute     set_directive_array_partition -type complete -dim 0 matrixmul r 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type complete -dim 0 matrixmul r 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7a35t-csg325-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 2.034 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 6.064 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.064 seconds; current allocated memory: 0.461 MB.
+Command ap_source done; 7.95 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned opened at Tue Feb 20 01:38:24 -0300 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7a35t-csg325-1 
+Execute       create_platform xc7a35t-csg325-1 -board  
+DBG:HLSDevice: Trying to load device library: D:/Xilinx/Vitis_HLS/2023.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/Xilinx/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-csg325-1'
+Command       create_platform done; 0.859 sec.
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.109 sec.
+Execute       ap_part_info -name xc7a35t-csg325-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.982 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -tool=xsim 
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+Execute     config_cosim -tool=xsim 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=D:/Sistemas-Digitais/Trabalho-2/hls 
+INFO: [HLS 200-1464] Running solution command: config_export -output=D:/Sistemas-Digitais/Trabalho-2/hls
+Execute     config_export -output=D:/Sistemas-Digitais/Trabalho-2/hls 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 1.097 sec.
+Execute   set_part xc7a35t-csg325-1 
+INFO: [HLS 200-1510] Running: set_part xc7a35t-csg325-1 
+Execute     create_platform xc7a35t-csg325-1 -board  
+Execute     source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.102 sec.
+Execute     ap_part_info -name xc7a35t-csg325-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.127 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+Execute   config_export -format ip_catalog -output D:/Sistemas-Digitais/Trabalho-2/hls -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output D:/Sistemas-Digitais/Trabalho-2/hls -rtl verilog 
+Execute   source ./hls_matriz/solution_allunroll_dimensioned/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./hls_matriz/solution_allunroll_dimensioned/directives.tcl
+Execute     set_directive_top -name matrixmul matrixmul 
+INFO: [HLS 200-1510] Running: set_directive_top -name matrixmul matrixmul 
+Execute     set_directive_unroll matrixmul/Sum 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Sum 
+Execute     set_directive_unroll matrixmul/R_row 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/R_row 
+Execute     set_directive_unroll matrixmul/R_col 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/R_col 
+Execute     set_directive_unroll matrixmul/Col_r 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Col_r 
+Execute     set_directive_unroll matrixmul/Row_a10 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_a10 
+Execute     set_directive_unroll matrixmul/Row_r 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_r 
+Execute     set_directive_unroll matrixmul/Row_a01 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_a01 
+Execute     set_directive_unroll matrixmul/sum00 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/sum00 
+Execute     set_directive_unroll matrixmul/sum10 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/sum10 
+Execute     set_directive_unroll matrixmul/sum11 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/sum11 
+Execute     set_directive_unroll matrixmul/sum01 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/sum01 
+Execute     set_directive_unroll matrixmul/Row_a11 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_a11 
+Execute     set_directive_unroll matrixmul/Row_a00 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_a00 
+Execute     set_directive_array_partition -type complete -dim 0 matrixmul a 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type complete -dim 0 matrixmul a 
+Execute     set_directive_array_partition -type complete -dim 0 matrixmul b 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type complete -dim 0 matrixmul b 
+Execute     set_directive_array_partition -type complete -dim 0 matrixmul r 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type complete -dim 0 matrixmul r 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7a35t-csg325-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 1.398 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 3.434 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.434 seconds; current allocated memory: 0.398 MB.
+Command ap_source done; 4.737 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned opened at Tue Feb 20 01:47:01 -0300 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7a35t-csg325-1 
+Execute       create_platform xc7a35t-csg325-1 -board  
+DBG:HLSDevice: Trying to load device library: D:/Xilinx/Vitis_HLS/2023.1\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: D:/Xilinx/Vivado/2023.1/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-csg325-1'
+Command       create_platform done; 0.865 sec.
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.109 sec.
+Execute       ap_part_info -name xc7a35t-csg325-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.989 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -tool=xsim 
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+Execute     config_cosim -tool=xsim 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -format=ip_catalog 
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+Execute     config_export -format=ip_catalog 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -output=D:/Sistemas-Digitais/Trabalho-2/hls 
+INFO: [HLS 200-1464] Running solution command: config_export -output=D:/Sistemas-Digitais/Trabalho-2/hls
+Execute     config_export -output=D:/Sistemas-Digitais/Trabalho-2/hls 
+Execute     send_msg_by_id INFO @200-1464@%s config_export -rtl=verilog 
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+Execute     config_export -rtl=verilog 
+Command   open_solution done; 1.107 sec.
+Execute   set_part xc7a35t-csg325-1 
+INFO: [HLS 200-1510] Running: set_part xc7a35t-csg325-1 
+Execute     create_platform xc7a35t-csg325-1 -board  
+Execute     source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/common/xilinx.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/plb46.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/axi4.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/saxilite.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/util.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfft.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/ip/xfir.gen 
+Execute       source D:/Xilinx/Vitis_HLS/2023.1/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.102 sec.
+Execute     ap_part_info -name xc7a35t-csg325-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.127 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute   config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+Execute   config_export -format ip_catalog -output D:/Sistemas-Digitais/Trabalho-2/hls -rtl verilog 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output D:/Sistemas-Digitais/Trabalho-2/hls -rtl verilog 
+Execute   source ./hls_matriz/solution_allunroll_dimensioned/directives.tcl 
+INFO: [HLS 200-1510] Running: source ./hls_matriz/solution_allunroll_dimensioned/directives.tcl
+Execute     set_directive_top -name matrixmul matrixmul 
+INFO: [HLS 200-1510] Running: set_directive_top -name matrixmul matrixmul 
+Execute     set_directive_unroll matrixmul/Sum 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Sum 
+Execute     set_directive_unroll matrixmul/R_row 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/R_row 
+Execute     set_directive_unroll matrixmul/R_col 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/R_col 
+Execute     set_directive_unroll matrixmul/Col_r 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Col_r 
+Execute     set_directive_unroll matrixmul/Row_a10 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_a10 
+Execute     set_directive_unroll matrixmul/Row_r 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_r 
+Execute     set_directive_unroll matrixmul/Row_a01 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_a01 
+Execute     set_directive_unroll matrixmul/sum00 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/sum00 
+Execute     set_directive_unroll matrixmul/sum10 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/sum10 
+Execute     set_directive_unroll matrixmul/sum11 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/sum11 
+Execute     set_directive_unroll matrixmul/sum01 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/sum01 
+Execute     set_directive_unroll matrixmul/Row_a11 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_a11 
+Execute     set_directive_unroll matrixmul/Row_a00 
+INFO: [HLS 200-1510] Running: set_directive_unroll matrixmul/Row_a00 
+Execute     set_directive_array_partition -type complete -dim 0 matrixmul a 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type complete -dim 0 matrixmul a 
+Execute     set_directive_array_partition -type complete -dim 0 matrixmul b 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type complete -dim 0 matrixmul b 
+Execute     set_directive_array_partition -type complete -dim 0 matrixmul r 
+INFO: [HLS 200-1510] Running: set_directive_array_partition -type complete -dim 0 matrixmul r 
+Execute   csim_design -quiet 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO-FLOW: Running SLX 'csim' proc: ::SLX::run_csim
+Execute     source D:/Sistemas-Digitais/Trabalho-2/hls/hls_matriz/solution_allunroll_dimensioned/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     send_msg_by_id INFO @200-2036@%s debug 
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+Execute     ap_part_info -name xc7a35t-csg325-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 1.577 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 3.685 sec.
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.685 seconds; current allocated memory: 0.520 MB.
+Command ap_source done; 4.998 sec.
+Execute cleanup_all 
