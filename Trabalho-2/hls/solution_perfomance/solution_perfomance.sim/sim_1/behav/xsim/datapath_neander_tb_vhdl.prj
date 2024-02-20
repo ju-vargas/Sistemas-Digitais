@@ -1,5 +1,6 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
+"../../../../solution_perfomance.srcs/sources_1/new/solution_perfomance.vhd" \
 "../../../../solution_perfomance.srcs/sim_1/new/sim.vhd" \
 
 # Do not sort compile order

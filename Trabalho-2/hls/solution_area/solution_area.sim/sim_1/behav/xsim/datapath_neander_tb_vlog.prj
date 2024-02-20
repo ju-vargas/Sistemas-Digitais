@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../solution_area.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../solution_area.ip_user_files/ipstatic/hdl/verilog/matrixmul_flow_control_loop_pipe_sequential_init.v" \
+"../../../../solution_area.ip_user_files/ipstatic/hdl/verilog/matrixmul_matrixmul_Pipeline_Row_a00_sum00.v" \
+"../../../../solution_area.ip_user_files/ipstatic/hdl/verilog/matrixmul_matrixmul_Pipeline_Row_a01_sum01.v" \
+"../../../../solution_area.ip_user_files/ipstatic/hdl/verilog/matrixmul_matrixmul_Pipeline_Row_a10_sum10.v" \
+"../../../../solution_area.ip_user_files/ipstatic/hdl/verilog/matrixmul_matrixmul_Pipeline_Row_a11_sum11.v" \
+"../../../../solution_area.ip_user_files/ipstatic/hdl/verilog/matrixmul_matrixmul_Pipeline_Row_r_Col_r.v" \
+"../../../../solution_area.ip_user_files/ipstatic/hdl/verilog/matrixmul_mul_8s_6s_8_1_1.v" \
+"../../../../solution_area.ip_user_files/ipstatic/hdl/verilog/matrixmul.v" \
+"../../../../solution_area.gen/sources_1/ip/matrixmul_0/sim/matrixmul_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -18,5 +18,6 @@ Compiling module xil_defaultlib.glbl
 Compiling module xil_defaultlib.matrixmul_mul_8s_6s_8_1_1(NUM_ST...
 Compiling module xil_defaultlib.matrixmul
 Compiling module xil_defaultlib.matrixmul_0
+Compiling architecture behavioral of entity xil_defaultlib.solution_perfomance [solution_perfomance_default]
 Compiling architecture bench of entity xil_defaultlib.datapath_neander_tb
 Built simulation snapshot datapath_neander_tb_behav

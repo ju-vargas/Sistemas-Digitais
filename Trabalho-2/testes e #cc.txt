@@ -1,0 +1,9 @@
+(tempo_fim - tempo_inicio)/periodo_clk = #cc
+
+teste otimizando a área
+(1145 - 405)/10 = 74
+nosso teste e o teste dela - 74 ciclos de clock
+
+teste otimizando a perfomance
+(535 - 505)/10 = 3
+nosso teste e o teste dela - 3 ciclos de clock

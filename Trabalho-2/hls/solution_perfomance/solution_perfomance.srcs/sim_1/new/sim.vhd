@@ -11,7 +11,7 @@ end;
 
 architecture bench of datapath_neander_tb is
 
-    COMPONENT matrixmul_0
+    COMPONENT solution_perfomance
       PORT (
         r_0_0_ap_vld : OUT STD_LOGIC;
         r_0_1_ap_vld : OUT STD_LOGIC;
@@ -187,7 +187,7 @@ architecture bench of datapath_neander_tb is
     signal stop_the_clock: boolean;  
 begin
 
-  matrix : matrixmul_0
+  matrix : solution_perfomance
   PORT MAP (
     r_0_0_ap_vld => r_0_0_ap_vld,
     r_0_1_ap_vld => r_0_1_ap_vld,
@@ -279,87 +279,86 @@ begin
     rst<='1';
     wait for 100ns;
     rst<='0';
+    wait for 105ns;
     ap_start<='1';
-    wait for 100ns;
     -- Atribuição dos valores da matriz in_mat_a_1 às portas correspondentes
-    a_0_0 <= std_logic_vector(to_unsigned(1, 8));
-    a_0_1 <= std_logic_vector(to_signed(2, 8));
-    a_0_2 <= std_logic_vector(to_signed(3, 8));
-    a_0_3 <= std_logic_vector(to_signed(4, 8));
-    a_0_4 <= std_logic_vector(to_signed(5, 8));
-    a_0_5 <= std_logic_vector(to_signed(6, 8));
-    a_0_6 <= std_logic_vector(to_signed(7, 8));
-    a_0_7 <= std_logic_vector(to_signed(8, 8));
+--    a_0_0 <= std_logic_vector(to_unsigned(1, 8));
+--    a_0_1 <= std_logic_vector(to_signed(2, 8));
+--    a_0_2 <= std_logic_vector(to_signed(3, 8));
+--    a_0_3 <= std_logic_vector(to_signed(4, 8));
+--    a_0_4 <= std_logic_vector(to_signed(5, 8));
+--    a_0_5 <= std_logic_vector(to_signed(6, 8));
+--    a_0_6 <= std_logic_vector(to_signed(7, 8));
+--    a_0_7 <= std_logic_vector(to_signed(8, 8));
+    
+--    a_1_0 <= std_logic_vector(to_signed(-1, 8));
+--    a_1_1 <= std_logic_vector(to_signed(-2, 8));
+--    a_1_2 <= std_logic_vector(to_signed(-3, 8));
+--    a_1_3 <= std_logic_vector(to_signed(-4, 8));
+--    a_1_4 <= std_logic_vector(to_signed(-5, 8));
+--    a_1_5 <= std_logic_vector(to_signed(-6, 8));
+--    a_1_6 <= std_logic_vector(to_signed(-7, 8));
+--    a_1_7 <= std_logic_vector(to_signed(-8, 8));
   
-    a_1_0 <= std_logic_vector(to_signed(-1, 8));
-    a_1_1 <= std_logic_vector(to_signed(-2, 8));
-    a_1_2 <= std_logic_vector(to_signed(-3, 8));
-    a_1_3 <= std_logic_vector(to_signed(-4, 8));
-    a_1_4 <= std_logic_vector(to_signed(-5, 8));
-    a_1_5 <= std_logic_vector(to_signed(-6, 8));
-    a_1_6 <= std_logic_vector(to_signed(-7, 8));
-    a_1_7 <= std_logic_vector(to_signed(-8, 8));
+--    a_2_0 <= std_logic_vector(to_signed(1, 8));
+--    a_2_1 <= std_logic_vector(to_signed(2, 8));
+--    a_2_2 <= std_logic_vector(to_signed(3, 8));
+--    a_2_3 <= std_logic_vector(to_signed(4, 8));
+--    a_2_4 <= std_logic_vector(to_signed(5, 8));
+--    a_2_5 <= std_logic_vector(to_signed(5, 8));
+--    a_2_6 <= std_logic_vector(to_signed(5, 8));
+--    a_2_7 <= std_logic_vector(to_signed(5, 8));
   
-    a_2_0 <= std_logic_vector(to_signed(1, 8));
-    a_2_1 <= std_logic_vector(to_signed(2, 8));
-    a_2_2 <= std_logic_vector(to_signed(3, 8));
-    a_2_3 <= std_logic_vector(to_signed(4, 8));
-    a_2_4 <= std_logic_vector(to_signed(5, 8));
-    a_2_5 <= std_logic_vector(to_signed(5, 8));
-    a_2_6 <= std_logic_vector(to_signed(5, 8));
-    a_2_7 <= std_logic_vector(to_signed(5, 8));
+--    a_3_0 <= std_logic_vector(to_signed(-1, 8));
+--    a_3_1 <= std_logic_vector(to_signed(-2, 8));
+--    a_3_2 <= std_logic_vector(to_signed(-3, 8));
+--    a_3_3 <= std_logic_vector(to_signed(-4, 8));
+--    a_3_4 <= std_logic_vector(to_signed(-5, 8));
+--    a_3_5 <= std_logic_vector(to_signed(-6, 8));
+--    a_3_6 <= std_logic_vector(to_signed(-7, 8));
+--    a_3_7 <= std_logic_vector(to_signed(-8, 8));
   
-    a_3_0 <= std_logic_vector(to_signed(-1, 8));
-    a_3_1 <= std_logic_vector(to_signed(-2, 8));
-    a_3_2 <= std_logic_vector(to_signed(-3, 8));
-    a_3_3 <= std_logic_vector(to_signed(-4, 8));
-    a_3_4 <= std_logic_vector(to_signed(-5, 8));
-    a_3_5 <= std_logic_vector(to_signed(-6, 8));
-    a_3_6 <= std_logic_vector(to_signed(-7, 8));
-    a_3_7 <= std_logic_vector(to_signed(-8, 8));
+--    a_4_0 <= std_logic_vector(to_signed(1, 8));
+--    a_4_1 <= std_logic_vector(to_signed(2, 8));
+--    a_4_2 <= std_logic_vector(to_signed(3, 8));
+--    a_4_3 <= std_logic_vector(to_signed(4, 8));
+--    a_4_4 <= std_logic_vector(to_signed(5, 8));
+--    a_4_5 <= std_logic_vector(to_signed(6, 8));
+--    a_4_6 <= std_logic_vector(to_signed(7, 8));
+--    a_4_7 <= std_logic_vector(to_signed(8, 8));
   
-    a_4_0 <= std_logic_vector(to_signed(1, 8));
-    a_4_1 <= std_logic_vector(to_signed(2, 8));
-    a_4_2 <= std_logic_vector(to_signed(3, 8));
-    a_4_3 <= std_logic_vector(to_signed(4, 8));
-    a_4_4 <= std_logic_vector(to_signed(5, 8));
-    a_4_5 <= std_logic_vector(to_signed(6, 8));
-    a_4_6 <= std_logic_vector(to_signed(7, 8));
-    a_4_7 <= std_logic_vector(to_signed(8, 8));
+--    a_5_0 <= std_logic_vector(to_signed(-2, 8));
+--    a_5_1 <= std_logic_vector(to_signed(-2, 8));
+--    a_5_2 <= std_logic_vector(to_signed(-2, 8));
+--    a_5_3 <= std_logic_vector(to_signed(-2, 8));
+--    a_5_4 <= std_logic_vector(to_signed(-2, 8));
+--    a_5_5 <= std_logic_vector(to_signed(-2, 8));
+--    a_5_6 <= std_logic_vector(to_signed(-2, 8));
+--    a_5_7 <= std_logic_vector(to_signed(-2, 8));
   
-    a_5_0 <= std_logic_vector(to_signed(-2, 8));
-    a_5_1 <= std_logic_vector(to_signed(-2, 8));
-    a_5_2 <= std_logic_vector(to_signed(-2, 8));
-    a_5_3 <= std_logic_vector(to_signed(-2, 8));
-    a_5_4 <= std_logic_vector(to_signed(-2, 8));
-    a_5_5 <= std_logic_vector(to_signed(-2, 8));
-    a_5_6 <= std_logic_vector(to_signed(-2, 8));
-    a_5_7 <= std_logic_vector(to_signed(-2, 8));
+--    a_6_0 <= std_logic_vector(to_signed(1, 8));
+--    a_6_1 <= std_logic_vector(to_signed(2, 8));
+--    a_6_2 <= std_logic_vector(to_signed(3, 8));
+--    a_6_3 <= std_logic_vector(to_signed(4, 8));
+--    a_6_4 <= std_logic_vector(to_signed(5, 8));
+--    a_6_5 <= std_logic_vector(to_signed(6, 8));
+--    a_6_6 <= std_logic_vector(to_signed(7, 8));
+--    a_6_7 <= std_logic_vector(to_signed(8, 8));
   
-    a_6_0 <= std_logic_vector(to_signed(1, 8));
-    a_6_1 <= std_logic_vector(to_signed(2, 8));
-    a_6_2 <= std_logic_vector(to_signed(3, 8));
-    a_6_3 <= std_logic_vector(to_signed(4, 8));
-    a_6_4 <= std_logic_vector(to_signed(5, 8));
-    a_6_5 <= std_logic_vector(to_signed(6, 8));
-    a_6_6 <= std_logic_vector(to_signed(7, 8));
-    a_6_7 <= std_logic_vector(to_signed(8, 8));
+--    a_7_0 <= std_logic_vector(to_signed(-1, 8));
+--    a_7_1 <= std_logic_vector(to_signed(-2, 8));
+--    a_7_2 <= std_logic_vector(to_signed(-3, 8));
+--    a_7_3 <= std_logic_vector(to_signed(-4, 8));
+--    a_7_4 <= std_logic_vector(to_signed(-5, 8));
+--    a_7_5 <= std_logic_vector(to_signed(-6, 8));
+--    a_7_6 <= std_logic_vector(to_signed(-7, 8));
+--    a_7_7 <= std_logic_vector(to_signed(-8, 8));
   
-    a_7_0 <= std_logic_vector(to_signed(-1, 8));
-    a_7_1 <= std_logic_vector(to_signed(-2, 8));
-    a_7_2 <= std_logic_vector(to_signed(-3, 8));
-    a_7_3 <= std_logic_vector(to_signed(-4, 8));
-    a_7_4 <= std_logic_vector(to_signed(-5, 8));
-    a_7_5 <= std_logic_vector(to_signed(-6, 8));
-    a_7_6 <= std_logic_vector(to_signed(-7, 8));
-    a_7_7 <= std_logic_vector(to_signed(-8, 8));
-  
-    -- Atribuição dos valores da triz in_mat_b_1 às portas correspondentes
-    b_0_0 <= std_logic_vector(to_signed(1, 8));
-    b_0_1 <= std_logic_vector(to_signed(-1, 8));
-    b_1_0 <= std_logic_vector(to_signed(-1, 8));
-    b_1_1 <= std_logic_vector(to_signed(1, 8));
-    wait for 100ns;
+--    -- Atribuição dos valores da triz in_mat_b_1 às portas correspondentes
+--    b_0_0 <= std_logic_vector(to_signed(1, 8));
+--    b_0_1 <= std_logic_vector(to_signed(-1, 8));
+--    b_1_0 <= std_logic_vector(to_signed(-1, 8));
+--    b_1_1 <= std_logic_vector(to_signed(1, 8));    
     a_0_0 <= std_logic_vector(to_signed(1, 8));
     a_0_1 <= std_logic_vector(to_signed(1, 8));
     a_0_2 <= std_logic_vector(to_signed(1, 8));
@@ -436,6 +435,9 @@ begin
     b_0_1 <= std_logic_vector(to_signed(1, 8));
     b_1_0 <= std_logic_vector(to_signed(1, 8));
     b_1_1 <= std_logic_vector(to_signed(-1, 8));
+    wait for 100ns;
+    ap_start<='0';
+    wait;
   end process;
 
   clocking: process
