@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Feb 20 04:38:39 2024
+# Process ID: 21104
+# Current directory: /media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Trabalho-2/PCPO/mult_matriz/mult_matriz.runs/mu_2_synth_1
+# Command line: vivado -log mu_2.vds -mode batch -messageDb vivado.pb -notrace -source mu_2.tcl
+# Log file: /media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Trabalho-2/PCPO/mult_matriz/mult_matriz.runs/mu_2_synth_1/mu_2.vds
+# Journal file: /media/juliana/LinFiles/Documents/GitHub/Sistemas-Digitais/Trabalho-2/PCPO/mult_matriz/mult_matriz.runs/mu_2_synth_1/vivado.jou
+#-----------------------------------------------------------
+source mu_2.tcl -notrace

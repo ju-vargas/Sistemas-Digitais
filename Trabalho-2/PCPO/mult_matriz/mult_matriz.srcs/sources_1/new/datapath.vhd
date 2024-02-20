@@ -36,8 +36,9 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity datapath is
     Port ( clk : in STD_LOGIC;
            rst: in STD_LOGIC;
-           done : in STD_LOGIC;
+           enable : in STD_LOGIC;
            data: in STD_LOGIC_VECTOR (127 downto 0);
+           B: in STD_LOGIC_VECTOR (7 downto 0);
            R0: out STD_LOGIC_VECTOR (15 downto 0);
            R1: out STD_LOGIC_VECTOR (15 downto 0));
 end datapath;
@@ -71,8 +72,8 @@ begin
     mult_data : multiplier
     PORT MAP (
         CLK => CLK,
-        A => "00000001",
-        B => buffer_shift,
+        A => B,
+        B => buffer_shift,--buffer_shift,
         P => R0_buf
     );
 -- Statements ============================================================================================================================================
@@ -87,29 +88,34 @@ begin
         if rst = '1' then
             R0 <= "0000000000000000";
             R1 <= "0000000000000000";
-        elsif clk'event and clk='1' then
-            S0(8 downto 0)   <= '0' & data( 7 downto 0) + '0' & data(15 downto 8);
-            S0(17 downto 9)  <= '0' & data(23 downto 16) + '0' & data(31 downto 24);
-            S0(26 downto 18) <= '0' & data(39 downto 32) + '0' & data(47 downto 40);
-            S0(35 downto 27) <= '0' & data(55 downto 48) + '0' & data(63 downto 56);
-            S0(44 downto 36) <= '0' & data(71 downto 64) + '0' & data(79 downto 72);
-            S0(53 downto 45) <= '0' & data(87 downto 80) + '0' & data(95 downto 88);
-            S0(62 downto 54) <= '0' & data(103 downto 96) + '0' & data(111 downto 104);
-            S0(71 downto 63) <= '0' & data(119 downto 112) + '0' & data(127 downto 120);
-        
-            S1(9 downto 0)   <= '0' & S0(8 downto 0)   + '0' & S0(17 downto 9);
-            S1(19 downto 10)  <= '0' & S0(26 downto 18) + '0' & S0(35 downto 27);
-            S1(29 downto 20) <= '0' & S0(44 downto 36) + '0' & S0(53 downto 45);
-            S1(39 downto 30) <= '0' & S0(62 downto 54) + '0' & S0(71 downto 63);
+            R1_buf <= "0000000000000000";
+            R2_buf <= "0000000000000000";
 
-            S2(10 downto 0) <= '0' & S1(9 downto 0) + '0' & S1(19 downto 10);
-            S2(21 downto 11)<= '0' & S1(29 downto 20) + '0' & S1(39 downto 30);
+        elsif clk'event and clk='1' then
+            if enable = '0' then 
+                S0(8 downto 0)   <= ('0' & data( 7 downto 0)) + ('0' & data(15 downto 8)) ;
+                S0(17 downto 9)  <= ('0' & data(23 downto 16)) +('0' & data(31 downto 24));
+                S0(26 downto 18) <= ('0' & data(39 downto 32)) + ('0' & data(47 downto 40));
+                S0(35 downto 27) <= ('0' & data(55 downto 48)) + ('0' & data(63 downto 56));
+                S0(44 downto 36) <= ('0' & data(71 downto 64)) + ('0' & data(79 downto 72));
+                S0(53 downto 45) <= ('0' & data(87 downto 80)) + ('0' & data(95 downto 88));
+                S0(62 downto 54) <= ('0' & data(103 downto 96)) + ('0' & data(111 downto 104));
+                S0(71 downto 63) <= ('0' & data(119 downto 112)) + ('0' & data(127 downto 120));
+        
+                S1(9 downto 0)   <= ('0' & S0(8 downto 0))   + ('0' & S0(17 downto 9));
+                S1(19 downto 10) <= ('0' & S0(26 downto 18)) + ('0' & S0(35 downto 27));
+                S1(29 downto 20) <= ('0' & S0(44 downto 36)) + ('0' & S0(53 downto 45));
+                S1(39 downto 30) <= ('0' & S0(62 downto 54)) + ('0' & S0(71 downto 63));
+
+                S2(10 downto 0) <= ('0' & S1(9 downto 0)) + ('0' & S1(19 downto 10));
+                S2(21 downto 11)<= ('0' & S1(29 downto 20)) + ('0' & S1(39 downto 30));
             
-            S3 <= '0' & S2(10 downto 0) + '0' & S2(21 downto 11); 
+                S3 <= ('0' & S2(10 downto 0)) + ('0' & S2(21 downto 11)); 
             
-            buffer_shift <= S3(11 downto 4); 
+                buffer_shift <= S3(11 downto 4); 
             
-            R1_buf <= R0_buf;
+                R1_buf <= R0_buf;
+            end if;
         end if; 
         
             
